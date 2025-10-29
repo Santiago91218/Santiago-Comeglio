@@ -1,0 +1,135 @@
+.footer {
+  padding: 50px 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  border-top: 3px #949494 solid;
+}
+
+/*=== PRIMERA SECCIÓN ===*/
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 60%;
+}
+
+.contentInformation {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.contentInformation h4 {
+}
+
+.contentInformation p {
+  font-size: 15px;
+}
+
+.contentLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.contentLinks h4 {
+}
+
+.listLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.listLinks li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.listLinks li a:hover {
+  color: #957c3d;
+}
+
+.contentNetworks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contentNetworks h4 {
+}
+
+.contentIcons {
+  display: flex;
+  gap: 1vw;
+}
+
+.contentIcons a{
+ color: #ffff;
+}
+
+
+.icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #957c3d;
+}
+
+/*=== SEGUNDA SECCIÓN ===*/
+.secondSection {
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  border-top: 3px #949494 solid;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.secondSection p {
+  font-size: 15px;
+}
+
+.secondSection p span {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.contentBuild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.iconBuildReact {
+  width: 18px;
+  height: 18px;
+}
+
+.iconBuildVite {
+  width: 18px;
+  height: 17px;
+}
+
+/*=== RESPONSIVE ===*/

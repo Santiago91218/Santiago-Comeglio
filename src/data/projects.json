@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "title": "Bodega Tierra Noble - Ecommerce",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Producto_eoxsr3.png",
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/springboot.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/typescript.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/mysql.svg"
+      }
+    ],
+    "images": [
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587662/TierraNoble_Blogs_oo1dus.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Admin_fbe9fw.png"
+    ],
+    "description": "Aplicación eCommerce completa para una bodega. Permite a los usuarios explorar productos, registrarse, comprar, gestionar favoritos, comparar artículos y más. Incluye un panel de administración completo con control de roles (admin y cliente) y seguridad con Spring Security. El sistema está integrado con Mercado Pago, Cloudinary y SendGrid para pagos, almacenamiento de imágenes y notificaciones por correo.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-TierraNoble",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-TierraNoble",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "Axios",
+      "Zustand",
+      "SweetAlert2",
+      "Yup",
+      "Cloudinary",
+      "SendGrid",
+      "Mercado Pago",
+      "Gradle",
+      "Lombok"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "LOOKz - Ecommerce",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587643/Lookz_Productos_c5zr1d.png",
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/springboot.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/typescript.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/mysql.svg"
+      }
+    ],
+    "images": [
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587643/Lookz_Carrito_qadirz.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587644/Lookz_Admin_l8kesn.png"
+    ],
+    "description": "LOOKz es una tienda online moderna que permite a los usuarios navegar productos, registrarse, iniciar sesión y realizar compras, mientras que los administradores pueden gestionar el catálogo completo desde un panel protegido. El sistema incluye autenticación y autorización con control de roles (admin y cliente), integración con Mercado Pago y una API REST segura desarrollada con Spring Boot y MySQL.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-Ecommerse",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-Ecommerse",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "Axios",
+      "Zustand",
+      "SweetAlert2",
+      "Yup",
+      "Mercado Pago",
+      "Gradle",
+      "Lombok"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "ToDoList - Gestión de Tareas y Sprints",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_Home_czcpas.png",
+    "mainTechnologies": [
+      {
+        "name": "Node.js",
+        "icon": "/node.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/javascript.svg"
+      },
+      {
+        "name": "Express.js",
+        "icon": "/express.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/typescript.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "/mongodb.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "/docker.svg"
+      }
+    ],
+    "images": [
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_ViewSprint_u4r0bu.png"
+    ],
+    "description": "Aplicación para la gestión de tareas y sprints, con un backend desarrollado en Node.js y un frontend en React. Permite crear tareas y sprints, asignarlas, cambiar sus estados y gestionar un backlog visualmente. Incluye una API REST con MongoDB y Docker para el entorno de desarrollo.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-ToDoList",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-ToDoList",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Axios",
+      "Tailwind CSS",
+      "Zustand",
+      "SweetAlert2",
+      "Docker"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gestión de Sucursales",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587789/GestionSucursales_Home_otq2qy.png",
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/springboot.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/typescript.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "/boostrap.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/mysql.svg"
+      }
+    ],
+    "images": [
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/GestionSucursales_Admin_syudjf.png"
+    ],
+    "description": "Aplicación para gestionar empresas, sucursales, productos, categorías y alérgenos. El frontend está desarrollado en React y el backend en Spring Boot, permitiendo CRUD completo sobre todas las entidades, navegación fluida, gestión global de estado con Redux y auditoría de cambios con Hibernate Envers.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-GestionSucursales",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-GestionSucursales",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Axios",
+      "React Router DOM",
+      "SweetAlert2",
+      "Bootstrap",
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "Gradle",
+      "Lombok"
+    ]
+  }
+]

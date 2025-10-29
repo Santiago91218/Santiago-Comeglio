@@ -1,0 +1,183 @@
+.containerMain {
+  min-height: 100vh;
+}
+
+/*=== CONTENIDO SOBRE MÍ ===*/
+.containerAboutMe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8rem;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  color: #f0f0ff;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.contentAboutMe{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.contentTitleAboutMe h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.textAboutMe {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin: 0;
+}
+
+.contentTitleExperience h4{
+  font-size: 1.5rem;
+
+}
+
+.contentTitleGoals h4{
+  font-size: 1.5rem;
+}
+
+.contentTitleAboutMe h3,
+.contentTitleExperience h4,
+.contentTitleGoals h4 {
+  color: #957c3d;
+  margin-bottom: 1rem;
+}
+
+.textAboutMe {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.list {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+}
+
+.contentImgAboutMe img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 25px rgba(120, 60, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.contentImgAboutMe img:hover {
+  box-shadow: 0 0 35px rgba(160, 90, 255, 0.6);
+}
+
+
+
+
+/*=== CONTENIDO EDUCACIÓN ===*/
+.containerEducation {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* 🟣 Sección de Educación */
+.contentEducation {
+  width: 80%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.contentTitleEducation {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contentTitleEducation h2 {
+  font-size: 3rem;
+}
+
+/* 🔹 Línea central del timeline */
+.contentCardEducation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contentCardEducation::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: linear-gradient(180deg, #8b5cf6, #06b6d4);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+/* 🟢 Cards intercaladas */
+.contentCardEducation > div {
+  position: relative;
+  width: 45%;
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.contentCardEducation > div:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.contentCardEducation > div:nth-child(even) {
+  align-self: flex-end;
+}
+
+/* 🔹 Línea y punto centrados debajo de cada card */
+.contentCardEducation > div {
+  position: relative;
+}
+
+/* Línea debajo */
+.contentCardEducation > div::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1.5px;
+  background: rgba(139, 92, 246, 0.25); /* violeta suave */
+}
+
+/* Punto brillante centrado */
+.contentCardEducation > div::before {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(
+    circle,
+    #c084fc 0%,
+    #8b5cf6 70%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+}

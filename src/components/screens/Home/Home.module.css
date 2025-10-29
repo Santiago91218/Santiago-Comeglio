@@ -1,0 +1,255 @@
+.containerHome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentHome {
+  padding: 10px;
+  width: 60%;
+}
+
+.contentNames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contentTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 10px;
+}
+
+.titleName {
+  font-size: 7rem;
+  color: #957c3d;
+  font-weight: bold;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.titleLastName {
+  font-size: 8rem;
+}
+
+.subTitle {
+  font-size: 2.5rem;
+  color: #cac0b3;
+  display: inline-block;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffffff;
+  animation: typing 3s steps(28) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 28ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.contentActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  padding: 10px;
+}
+
+.contentIcons {
+  margin-top: 50px;
+  display: flex;
+  gap: 5vw;
+}
+
+/* --- ICONOS BASE --- */
+.iconWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 60px;
+  color: var(--color);
+  z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover: el ícono se eleva y cambia a negro */
+.iconWrapper:hover .icon {
+  color: #000;
+}
+
+/* Reflejo invertido */
+.reflection {
+  font-size: 60px;
+  color: var(--color);
+  opacity: 0.3;
+  transform: scaleY(-1);
+  filter: blur(1px);
+  margin-top: 10px;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    transparent
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent);
+}
+
+/* --- CÍRCULO PRINCIPAL --- */
+.iconWrapper::before {
+  content: "";
+  position: absolute;
+  top: -35%;
+  width: 100px;
+  height: 100px;
+  background: var(--color);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  z-index: 0;
+}
+
+/* --- BRILLO EXTERIOR (halo difuminado) --- */
+.iconWrapper::after {
+  content: "";
+  position: absolute;
+  top: -25%;
+  width: 120px;
+  height: 120px;
+  background: var(--color);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(60px); /* halo suave */
+  transition: opacity 0.4s ease, transform 0.5s ease;
+  transform: scale(0.8);
+  z-index: 0;
+}
+
+/* Hover: activa el círculo y el brillo exterior */
+.iconWrapper:hover::before {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+.iconWrapper:hover::after {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.contentIcons {
+  display: flex;
+  gap: 5vw;
+}
+
+.contentIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon {
+  font-size: 60px;
+  color: var(--color);
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.iconWrapper:hover .icon {
+  color: #000; /* solo el icono principal cambia */
+}
+
+.reflection {
+  font-size: 60px;
+  color: var(--color); /* siempre mismo color que el icono */
+  opacity: 0.3;
+  transform: scaleY(-1);
+  filter: blur(1px);
+  margin-top: 10px;
+  pointer-events: none; /* importante: no dispara hover */
+}
+
+/* --- COLORES PERSONALIZADOS --- */
+.linkedin {
+  --color: #0056b3;
+}
+
+.github {
+  --color: #7a007a;
+}
+
+.buttonDownload {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #007bff;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #007bff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #007bff;
+}
+
+.buttonDownload:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #007bff;
+}
+
+.buttonDownload:active {
+  transform: scale(0.9);
+}
+
+.buttonDownload span {
+  margin-left: 15px;
+}
+

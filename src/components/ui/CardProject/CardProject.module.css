@@ -1,0 +1,131 @@
+.containerCard {
+  position: relative;
+  width: 100%;
+  max-width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.contentTitle h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.mainImageProject {
+  cursor: pointer;
+  transition: transform 0.7s ease, rotate 0.7s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #ffff;
+}
+
+.mainImageProject:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.mainImageProject img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border: none;
+}
+
+.contentButton {
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.contentButton button {
+  background-color: #b3af92;
+  color: black;
+  font-weight: 600;
+  width: 6vw;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mainImageProject:hover .contentButton button {
+  background-color: #ebe5b7;
+}
+
+.techOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  overflow: hidden;
+}
+
+.mainImageProject:hover .techOverlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contentTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 90%;
+}
+
+.contentTech img {
+  width: 50px;
+  height: 50px;
+  background: #170f1f;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.contentTech img:hover {
+  background: #400080;
+}
+
+.iconWrapper {
+  position: relative;
+  display: inline-block;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.iconWrapper::after {
+  content: attr(data-text);
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.iconWrapper:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}

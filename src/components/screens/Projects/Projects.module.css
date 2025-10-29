@@ -1,0 +1,20 @@
+.containerProjects {
+  min-height: 100vh;
+  margin-top: 300px;
+}
+
+.contentTitle {
+  margin-top: 60px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.contentTitle h2 {
+  font-size: 3rem;
+}
+
+.contentCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}

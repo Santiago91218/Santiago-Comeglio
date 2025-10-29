@@ -1,0 +1,155 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.contentIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.icon a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #ffff;
+}
+
+.icon a:hover {
+  color: #957c3d;
+}
+
+.icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #957c3d;
+}
+
+.contentMenuOptions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0b0b0f;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.cancelButton {
+  text-align: end;
+}
+
+.cancelButton svg {
+  margin: 15px 40px 15px 0px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cancelButton svg:hover {
+  color: #957c3d;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.contentLogo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e2e;
+}
+
+.containerOptions {
+  flex: 1;
+  background: #0c0c0f;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+}
+
+.option,
+.selected {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.option:hover {
+  color: #957c3d;
+}
+
+.selected {
+  color: #957c3d;
+}
+
+.option a {
+  text-decoration: none;
+  color: #e6e6e6;
+  transition: color 0.3s ease;
+}
+
+.option a:hover {
+  color: #957c3d;
+}
+
+.selected a {
+  text-decoration: none;
+  color: #957c3d;
+}
+
+.submenu {
+  list-style: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  text-align: start;
+  left: 5%;
+  top: 300%;
+}
+
+.submenu li {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.submenu li:hover {
+  color: #957c3d;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #e6e6e6;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.submenu li a:hover {
+  color: #957c3d;
+}
