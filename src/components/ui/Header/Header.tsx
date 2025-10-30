@@ -30,11 +30,11 @@ export const Header = () => {
       <div className={styles.contentIcons}>
         <span className={styles.icon}>
           <a href="#Home">
-            <LuChevronsLeftRight size={36} />
+            <LuChevronsLeftRight size={50} />
           </a>
         </span>
         <span onClick={() => setStateMenu(true)} className={styles.icon}>
-          <GiHamburgerMenu size={32} />
+          <GiHamburgerMenu size={40} />
         </span>
       </div>
 

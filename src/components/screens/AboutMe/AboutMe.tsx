@@ -26,10 +26,11 @@ export const AboutMe = () => {
             <div className={styles.contentTitleExperience}>
               <h4>Experiencia y Habilidades</h4>
             </div>
-            <p className={styles.textAboutMe}>
-              A lo largo de mi formación como Técnico Superior en Programación y
+            <div className={styles.textAboutMe}>
+              <p>A lo largo de mi formación como Técnico Superior en Programación y
               mi experiencia práctica en desarrollo web, he adquirido
               conocimientos sólidos en varias áreas:
+                </p>
               <ul className={styles.list}>
                 <li>
                   <b>Desarrollo Front-End y Back-End: </b>Experiencia con
@@ -46,7 +47,7 @@ export const AboutMe = () => {
                   en tiempo y forma.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
 
           <div className={styles.professionalGoals}>

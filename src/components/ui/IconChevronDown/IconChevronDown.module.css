@@ -2,8 +2,10 @@
   position: fixed;
   bottom: 20px;
   left: 50%;
-  color: #957c3d;
-  animation: float 2s ease-in-out infinite;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  animation: float 2s ease-in-out infinite,
+    colorShift 5s linear infinite alternate;
 }
 
 @keyframes float {
@@ -15,5 +17,23 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    color: var(--pink-100);
+  }
+  25% {
+    color: var(--pink-200);
+  }
+  50% {
+    color: var(--yellow-100);
+  }
+  75% {
+    color: var(--pink-100);
+  }
+  100% {
+    color: var(--pink-200);
   }
 }

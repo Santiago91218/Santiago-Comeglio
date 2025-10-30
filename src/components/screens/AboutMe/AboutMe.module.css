@@ -81,8 +81,45 @@
   box-shadow: 0 0 35px rgba(160, 90, 255, 0.6);
 }
 
+.contentImgAboutMe{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
+.contentImgAboutMe img::after, .contentImgAboutMe::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle) ,transparent 70%,blue);
+  z-index: -1;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #c084fc;
+  animation: 4s spin linear infinite;
+}
+
+.contentImgAboutMe img::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from{
+    --angle:0deg;
+  }
+  to{
+    --angle:360deg;
+  }
+}
 
 /*=== CONTENIDO EDUCACIÓN ===*/
 .containerEducation {

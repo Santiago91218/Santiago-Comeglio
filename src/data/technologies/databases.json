@@ -1,0 +1,20 @@
+[
+  {
+    "index": 1,
+    "color": "142, 252, 204",
+    "img": "/mysql.svg",
+    "name": "MySQL"
+  },
+  {
+    "index": 2,
+    "color": "252, 208, 142",
+    "img": "/postgresql.svg",
+    "name": "PostgreSQL"
+  },
+  {
+    "index": 3,
+    "color": "252, 142, 239",
+    "img": "/mongodb.svg",
+    "name": "MongoDB"
+  }
+]

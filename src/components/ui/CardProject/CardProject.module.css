@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 8px solid #ffff;
+  /* border: 8px solid var(--gray-500);  */
 }
 
 .mainImageProject:hover {
@@ -46,8 +46,8 @@
 }
 
 .contentButton button {
-  background-color: #b3af92;
-  color: black;
+  background-color: var(--beige-100);
+  color: var(--black);
   font-weight: 600;
   width: 6vw;
   font-size: 1rem;
@@ -59,7 +59,7 @@
 }
 
 .mainImageProject:hover .contentButton button {
-  background-color: #ebe5b7;
+  background-color: var(--beige-200);
 }
 
 .techOverlay {
@@ -91,14 +91,14 @@
 .contentTech img {
   width: 50px;
   height: 50px;
-  background: #170f1f;
+  background: var(--blue-100);
   padding: 8px 16px;
   border-radius: 8px;
   transition: background 0.3s ease;
 }
 
 .contentTech img:hover {
-  background: #400080;
+  background: var(--blue-400);
 }
 
 .iconWrapper {
@@ -114,8 +114,8 @@
   top: -28px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: var(--blue-400);
+  color: var(--white);
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 14px;
@@ -128,4 +128,49 @@
 .iconWrapper:hover::after {
   opacity: 1;
   transform: translateX(-50%) translateY(-5px);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.mainImageProject::after,
+.mainImageProject::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, var(--blue-600));
+  z-index: -1;
+  padding: 5px;
+  /* border-radius: 10px; */
+  animation: 4s spin linear infinite;
+}
+
+.mainImageProject::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.mainImageProject::before,
+.mainImageProject::after {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mainImageProject:hover::before,
+.mainImageProject:hover::after {
+  opacity: 1;
 }

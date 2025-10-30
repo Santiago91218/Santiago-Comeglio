@@ -1,0 +1,57 @@
+[
+  { "index": 1, "color": "142, 202, 252", "img": "/git.svg", "name": "Git" },
+  {
+    "index": 2,
+    "color": "204, 142, 252",
+    "img": "/github.svg",
+    "name": "GitHub"
+  },
+  {
+    "index": 3,
+    "color": "252, 142, 142",
+    "img": "/docker.svg",
+    "name": "Docker"
+  },
+  {
+    "index": 4,
+    "color": "252, 252, 142",
+    "img": "/postman.svg",
+    "name": "Postman"
+  },
+  {
+    "index": 5,
+    "color": "215, 252, 142",
+    "img": "/trello.svg",
+    "name": "Trello"
+  },
+  {
+    "index": 6,
+    "color": "142, 249, 252",
+    "img": "/figma.svg",
+    "name": "Figma"
+  },
+  {
+    "index": 7,
+    "color": "252, 208, 142",
+    "img": "/vitejs.svg",
+    "name": "Vite"
+  },
+  {
+    "index": 8,
+    "color": "142, 252, 157",
+    "img": "/vscode.svg",
+    "name": "VSCode"
+  },
+  {
+    "index": 9,
+    "color": "252, 142, 239",
+    "img": "/intellij.svg",
+    "name": "IntelliJ IDEA"
+  },
+  {
+    "index": 10,
+    "color": "204, 142, 252",
+    "img": "/notion.svg",
+    "name": "Notion"
+  }
+]

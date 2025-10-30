@@ -11,7 +11,7 @@ export const Projects = () => {
 
       <div className={styles.contentCard}>
         {data.map((p) => (
-          <CardProject project={p} />
+          <CardProject key={p.id} project={p} />
         ))}
       </div>
     </div>
