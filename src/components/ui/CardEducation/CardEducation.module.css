@@ -1,12 +1,11 @@
 .containerCard {
-  background: rgba(20, 20, 35, 0.9);
-  border: 1px solid rgba(120, 60, 255, 0.25);
+  background: var(--gray-900);
+  border: 1px solid var(--violet-300);
   border-radius: 18px;
   padding: 1.5rem;
   width: 600px;
   height: 300px;
-  color: #e0e0ff;
-  box-shadow: 0 0 15px rgba(120, 60, 255, 0.2);
+  box-shadow: 0 0 10px var(--violet-300);
   backdrop-filter: blur(10px);
   transition: all 0.4s ease;
   display: flex;
@@ -16,8 +15,8 @@
 }
 
 .containerCard:hover {
-  border-color: rgba(160, 90, 255, 0.6);
-  box-shadow: 0 0 40px rgba(160, 90, 255, 0.5);
+  border-color: var(--violet-200);
+  box-shadow: 0 0 30px var(--violet-300);
   transform: translateY(-4px);
 }
 
@@ -28,7 +27,7 @@
 .title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #c084fc;
+  color: var(--violet-300);
   margin-bottom: 0.5rem;
 }
 
@@ -36,14 +35,14 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 6px;
-  box-shadow: 0 0 10px rgba(150, 60, 255, 0.2);
+  background: var(--white);
+  padding: 2px;
 }
 
 .contentData {
   font-size: 1.1rem;
-  color: #a1a1ff;
+  color: var(--violet-100);
+  color: var(--gray-300);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,4 +61,4 @@
   gap: 0.3rem;
 }
 
-
+/*=== RESPPONSIVE ===*/

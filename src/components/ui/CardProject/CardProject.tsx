@@ -21,7 +21,9 @@ export const CardProject: FC<ICardProps> = ({ project }) => {
   };
 
   return (
-    <div className={styles.containerCard}>
+    <div
+    onClick={()=>{handleClick(project.title)}}
+    className={styles.containerCard}>
       <div className={styles.contentTitle}>
         <h3>{project.title}</h3>
       </div>

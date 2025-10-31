@@ -1,65 +1,77 @@
-/*=== GENERALES ===*/
+/*=== VARIABLES ===*/
 :root {
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
-
-    --primary-500: #ef4444;
-    --primary-400: #f87171;
-    --primary-300: #fca5a5;
-    --primary-600: #dc2626;
-    --primary-700: #b91c1c;
-    --secondary-500: #6366f1;
-    --secondary-400: #818cf8;
-    --secondary-300: #a5b4fc;
-    --secondary-600: #4f46e5;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-    --gray-950: #030712;
-    --black:#000;
-    --white:#ffff;
-
-    --blue:#000428;
-    --blue-100:#000535;
-    --blue-200:#000320;
-    --blue-300:#00054d;
-    --blue-400:#00095a;
-
-    --blue-600:#222eb4;
-    --blue-700:#212fcf;
-    
-    --violeta:#0f0c29;
-    --pink-100:#ffb0c4;
-    --pink-200:#fd99b2;
-    --yellow-100:#fbffc1;
-
-    --beige-100:#cac38b;
-    --beige-200:#7e784e;
-    --colorLinkedin:#0056b3;
-    --colorGithub:#7a007a;
-
+  --bg-violet: #0f0c29;
+  --violet-100: #a5b4fc;
+  --violet-200: #818cf8;
+  --violet-300: #6366f1;
+  --violet-400: #4f46e5;
+  --violet-500: #4a4dff;
+  --violet-600: #3e34fa;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+  --pink-100: #ffb0c4;
+  --pink-200: #fd99b2;
+  --yellow-100: #fbffc1;
+  --beige-100: #cac38b;
+  --beige-200: #9e975e;
+  --bg-blue: #000428;
+  --blue-100: #000535;
+  --blue-200: #000320;
+  --blue-300: #00054d;
+  --blue-400: #00095a;
+  --blue-600: #222eb4;
+  --blue-700: #212fcf;
+  --ligth-blue: #06b6d4;
+  --black: #000;
+  --white: #ffff;
+  --colorLinkedin: #0056b3;
+  --colorGithub: #7a007a;
 }
 
+/*=== GENERALES ===*/
 * {
   margin: 0px;
 }
 
- body {
-background:
-  radial-gradient(circle at 15% 80%, var(--blue) 0%, transparent 55%),
-  radial-gradient(circle at 85% 20%, var(--violeta) 0%, transparent 45%),
-  linear-gradient(180deg, var(--gray-950), var(--gray-950));
-
+body {
+  background: radial-gradient(
+      circle at 15% 80%,
+      var(--gray-950) 0%,
+      transparent 55%
+    ),
+    radial-gradient(circle at 85% 20%, var(--bg-violet) 0%, transparent 45%),
+    linear-gradient(180deg, var(--bg-blue), var(--bg-blue));
   color: var(--gray-200);
   font-family: var(--font-sans);
-} 
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-600);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-800);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-900);
+}
 
 @keyframes gradient {
   0% {
@@ -72,57 +84,3 @@ background:
     background-position: 0% 50%;
   }
 }
-
-
-
-
-/*
-Azul
-#000428
-
-Violeta
-#0f0c29
-*/
-
-/*
-:root {
-    --primary-500: #ef4444;
-    --primary-400: #f87171;
-    --primary-300: #fca5a5;
-    --primary-600: #dc2626;
-    --primary-700: #b91c1c;
-    --secondary-500: #6366f1;
-    --secondary-400: #818cf8;
-    --secondary-300: #a5b4fc;
-    --secondary-600: #4f46e5;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-    --gray-950: #030712;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    fondo:
-    var(--gray-950)
-*/

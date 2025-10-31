@@ -35,14 +35,14 @@
    color: var(--gray-400)
 }
 
+/*=== MENÚ ===*/
 .contentMenuOptions {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #0b0b0f;
-  color: #fff;
+  color: var(--gray-50);
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
 }
 
 .cancelButton svg:hover {
-  color: #957c3d;
+  color: var(--gray-400)
 }
 
 .content {
@@ -72,12 +72,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #2e2e2e;
+  background: var(--gray-800);
 }
 
 .containerOptions {
   flex: 1;
-  background: #0c0c0f;
+  background: var(--gray-950);
 }
 
 .list {
@@ -97,27 +97,19 @@
   transition: color 0.3s ease;
 }
 
-.option:hover {
-  color: #957c3d;
-}
-
-.selected {
-  color: #957c3d;
-}
-
 .option a {
   text-decoration: none;
-  color: #e6e6e6;
+  color: var(--gray-50);
   transition: color 0.3s ease;
 }
 
 .option a:hover {
-  color: #957c3d;
+  color: var(--gray-400);
 }
 
 .selected a {
   text-decoration: none;
-  color: #957c3d;
+ color: var(--gray-400)
 }
 
 .submenu {
@@ -134,22 +126,25 @@
 .submenu li {
   font-weight: 500;
   font-size: 2rem;
-  color: #e6e6e6;
+  color: var(--gray-50);
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .submenu li:hover {
-  color: #957c3d;
+  color: var(--gray-400);
 }
 
 .submenu li a {
   text-decoration: none;
-  color: #e6e6e6;
+  color: var(--gray-50);
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .submenu li a:hover {
-  color: #957c3d;
+  color: var(--gray-400);
 }
+
+
+/*=== RESPONSIVE ===*/

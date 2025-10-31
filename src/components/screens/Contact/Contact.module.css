@@ -3,64 +3,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 80px 0px;
   gap: 8vh;
 }
 
 .containerContact h2 {
-  font-size: 3rem;
-    margin-top: 90px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.containerContact h2 span {
-  color: #d32f2f;
+  font-size: 4rem;
+  margin-top: 120px;
+  color: var(--gray-200);
 }
 
 .contentForm {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   width: 50%;
+  box-shadow: 0 0 25px var(--gray-600);
+  border-radius: 10px;
 }
 
 .form {
-  background: #222;
+  background: var(--gray-900);
   padding: 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 4vh;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  border-radius: 10px 0px 0px 10px;
 }
 
 .inputGroup,
 .textareaGroup {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.7rem;
 }
 
 .inputGroup label,
 .textareaGroup label {
   font-size: 1.1rem;
-  color: #ccc;
+  color: var(--gray-200);
 }
 
 .inputGroup span,
 .textareaGroup span {
-  color: #d32f2f;
+  color: var(--violet-200);
 }
 
 .inputGroup input,
 .textareaGroup textarea {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #d32f2f;
-  color: #fff;
-  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--violet-400);
+  color: var(--gray-300);
+  padding: 4px 2px;
   outline: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .textareaGroup textarea {
@@ -69,16 +66,16 @@
 }
 
 .inputGroup {
-  position: relative; 
+  position: relative;
 }
 
-.inputGroup .line{
+.inputGroup .line {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--black);
   transition: width 0.3s ease;
 }
 
@@ -92,7 +89,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--black);
   transition: width 0.3s ease;
 }
 
@@ -104,10 +101,9 @@
   width: 100%;
 }
 
-
 .buttonSend {
-  background: #d32f2f;
-  color: #fff;
+  background: var(--violet-400);
+  color: var(--white);
   border: none;
   padding: 0.8rem;
   font-size: 1rem;
@@ -123,7 +119,7 @@
 }
 
 .buttonSend:hover {
-  background: #ff4b4b;
+  background: var(--violet-500);
 }
 
 .buttonSend svg {
@@ -137,15 +133,15 @@
 }
 
 .contentMoreInfo {
-  background: #0e0e0e;
+  background: var(--gray-950);
   padding: 2rem;
   flex: 0.8;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  border-radius: 0px 10px 10px 0px;
 }
 
 .contentMoreInfo h4 {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--gray-200);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -157,12 +153,16 @@
   margin-bottom: 1.5rem;
 }
 
+.contentIcons p {
+  color: var(--gray-300);
+}
+
 .contentIcons svg {
-  color: #d32f2f;
+  color: var(--violet-400);
 }
 
 .contentText p {
-  color: #aaa;
+  color: var(--gray-300);
   font-size: 1rem;
   margin-top: 1.4rem;
 }

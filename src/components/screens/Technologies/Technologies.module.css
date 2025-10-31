@@ -7,16 +7,17 @@
   align-items: center;
   overflow: hidden;
   padding: 80px 0px;
-  margin-top: 220px;
+  margin-top: 120px;
 }
 
-.contentTittle{
-    width: 100%;
+.contentTittle {
+  width: 100%;
 }
 
-.contentTittle h3{
-    font-size: 3rem;
-    text-align: center;
+.contentTittle h3 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--gray-200);
 }
 
 /* ----- 3D Wrapper ----- */
@@ -24,13 +25,13 @@
   width: 150px;
   height: 120px;
   position: relative;
-  perspective: 1000px; /* 👈 esto activa el efecto 3D */
+  perspective: 1000px; 
 }
 
 /* ----- Inner rotating ring ----- */
 .inner {
   --quantity: 10;
-  --translateZ: 350px; /* distancia del centro */
+  --translateZ: 350px;
   position: absolute;
   inset: 0;
   transform-style: preserve-3d;
@@ -65,7 +66,6 @@
   --color-card: 142, 249, 252;
   position: absolute;
   inset: 0;
-  background-color: aquamarine;
   background-color: rgba(var(--color-card), 0.2);
   box-shadow: 0 0 20px rgba(var(--color-card), 0.6);
   padding: 0px 0px;
@@ -81,14 +81,11 @@
 .img {
   width: 110px;
   height: 110px;
-  /* border-radius: 20px; */
-  /* margin: auto; */
   background-color: rgba(var(--color-card), 0.2);
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* box-shadow: 0 0 20px rgba(var(--color-card), 0.6); */
 }
 
 /* ✦ Cuando se hace hover sobre el contenedor, se pausa la animación ✦ */
@@ -103,11 +100,11 @@
   left: 50%;
   color: rgba(var(--color-card), 0.6);
   transform: translateX(-50%);
-  display: block;               /* usar block para controlar width */
-  max-width: 120px;             /* ajusta al ancho del ícono */
-  white-space: nowrap;           /* fuerza que sea una sola línea */
-  overflow: hidden;              /* oculta el texto que se desborda */
-  text-overflow: ellipsis;       /* agrega "..." si es demasiado largo */
+  display: block; /* usar block para controlar width */
+  max-width: 120px; /* ajusta al ancho del ícono */
+  white-space: nowrap; /* fuerza que sea una sola línea */
+  overflow: hidden; /* oculta el texto que se desborda */
+  text-overflow: ellipsis; /* agrega "..." si es demasiado largo */
   font-size: 14px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -135,17 +132,10 @@
 
 .sectionTitle {
   font-size: 24px;
-  color: white;
-  margin-bottom: 120px;
+  color: var(--gray-200);
+  margin-bottom: 150px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid var(--gray-400);
   padding-bottom: 8px;
 }
-
-
-
-
-
-
-

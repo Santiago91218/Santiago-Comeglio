@@ -30,12 +30,12 @@
   font-size: 7rem;
   background: linear-gradient(
     90deg,
-    var(--secondary-400),
-    var(--secondary-500),
-    var(--secondary-600),
-    var(--secondary-400),
-    var(--secondary-500),
-    var(--secondary-600)
+    var(--violet-200),
+    var(--violet-300),
+    var(--violet-400),
+    var(--violet-200),
+    var(--violet-300),
+    var(--violet-400)
   );
   -webkit-background-clip: text; /* Aplica el fondo al texto */
   -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
@@ -259,19 +259,19 @@
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: var(--secondary-600);
+  color: var(--violet-400);
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
-  border: 2px solid var(--secondary-600);
+  border: 2px solid var(--violet-400);
   text-transform: uppercase;
   border-radius: 10px;
-  box-shadow: inset 0 0 0 0 var(--secondary-600);
+  box-shadow: inset 0 0 0 0 var(--violet-400);
 }
 
 .buttonDownload:hover {
   color: var(--gray-200);
-  box-shadow: inset 0 -100px 0 0 var(--secondary-600);
+  box-shadow: inset 0 -100px 0 0 var(--violet-400);
 }
 
 .buttonDownload:hover svg {
@@ -283,7 +283,7 @@
 }
 
 .buttonDownload svg {
-  color: var(--secondary-600);
+  color: var(--violet-400);
   transition: ease-out 0.5s;
 }
 

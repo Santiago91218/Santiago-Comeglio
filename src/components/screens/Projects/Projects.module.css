@@ -1,6 +1,6 @@
 .containerProjects {
   min-height: 100vh;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .contentTitle {
@@ -10,7 +10,8 @@
 }
 
 .contentTitle h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: var(--gray-200);
 }
 
 .contentCard {

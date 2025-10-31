@@ -2,9 +2,9 @@ import styles from "./Header.module.css";
 import { LuChevronsLeftRight } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import { MdOutlineCancel } from "react-icons/md";
 import data from "../../../data/projects.json";
 import { useNavigate } from "react-router";
+import { ImCross } from "react-icons/im";
 
 export const Header = () => {
   const [stateMenu, setStateMenu] = useState(false);
@@ -42,13 +42,15 @@ export const Header = () => {
         <div className={styles.contentMenuOptions}>
           <div className={styles.content}>
             <div className={styles.contentLogo}>
-              <LuChevronsLeftRight size={360} />
+              <LuChevronsLeftRight size={360}
+              color="#f9fafb"
+              />
             </div>
 
             <div className={styles.containerOptions}>
               <div className={styles.cancelButton}>
-                <MdOutlineCancel
-                  size={32}
+                <ImCross 
+                  size={24}
                   onClick={() => setStateMenu(false)}
                 />
               </div>
@@ -101,9 +103,6 @@ export const Header = () => {
                               <a href="#Education" onClick={handleCloseMenu}>
                                 Educación
                               </a>
-                            </li>
-                            <li>
-                              <a onClick={handleCloseMenu}>Certificaciones</a>
                             </li>
                           </ul>
                         )}

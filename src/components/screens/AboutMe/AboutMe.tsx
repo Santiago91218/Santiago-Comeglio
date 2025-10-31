@@ -1,5 +1,5 @@
 import styles from "./AboutMe.module.css";
-import img from "../../../assets/foto.jpg";
+import SantiagoComeglio from "/FotoPersonal.jpg";
 import { CardEducation } from "../../ui/CardEducation/CardEducation";
 
 export const AboutMe = () => {
@@ -13,12 +13,12 @@ export const AboutMe = () => {
             </div>
 
             <p className={styles.textAboutMe}>
-              Soy Santiago, Técnico Superior en Programación con experiencia
-              práctica en proyectos Full Stack. Trabajo con Java, Spring Boot,
-              React y TypeScript, integrando bases de datos relacionales (MySQL)
-              y desarrollando APIs RESTful seguras. Mi enfoque se centra en
-              claridad, consistencia y buenas prácticas, aplicando arquitectura
-              limpia y diseño sólido en cada proyecto.
+              Soy Santiago, Técnico Superior en Programación especializado en el
+              desarrollo de soluciones Full Stack utilizando Java/Spring Boot en
+              el backend y React/TypeScript en el frontend. Tengo experiencia en
+              la integración de bases de datos relacionales (MySQL) y en la
+              creación de APIs RESTful seguras, priorizando la claridad,
+              consistencia y buenas prácticas de desarrollo.
             </p>
           </div>
 
@@ -27,14 +27,16 @@ export const AboutMe = () => {
               <h4>Experiencia y Habilidades</h4>
             </div>
             <div className={styles.textAboutMe}>
-              <p>A lo largo de mi formación como Técnico Superior en Programación y
-              mi experiencia práctica en desarrollo web, he adquirido
-              conocimientos sólidos en varias áreas:
-                </p>
+              <p>
+                A lo largo de mi formación como Técnico Superior en Programación
+                y mi experiencia práctica en desarrollo web, he adquirido
+                conocimientos sólidos en varias áreas:
+              </p>
               <ul className={styles.list}>
                 <li>
                   <b>Desarrollo Front-End y Back-End: </b>Experiencia con
-                  React.js, Java, Spring Boot, HTML, CSS y JavaScript.
+                  React.js, Java, Spring Boot, Node.js, HTML, CSS y JS/TS, entre
+                  otras.
                 </li>
                 <li>
                   <b>Bases de Datos y APIs:</b> Manejo de MySQL, PostgreSQL y
@@ -55,16 +57,15 @@ export const AboutMe = () => {
               <h4>Objetivos Profesionales</h4>
             </div>
             <p className={styles.textAboutMe}>
-              Mi objetivo es seguir creciendo como desarrollador Full Stack,
-              profundizando en nuevas tecnologías y contribuyendo a proyectos
-              que generen valor real. Busco desarrollar soluciones eficientes y
-              escalables, combinando creatividad y lógica para enfrentar
-              desafíos complejos.
+              Mi objetivo es seguir creciendo como desarrollador, profundizando
+              en nuevas tecnologías y contribuyendo a proyectos que generen
+              valor real. Busco desarrollar soluciones eficientes y escalables,
+              combinando creatividad y lógica para enfrentar desafíos complejos.
             </p>
           </div>
         </div>
         <div className={styles.contentImgAboutMe}>
-          <img src={img} alt="Imagen de perfil" />
+          <img src={SantiagoComeglio} alt="Imagen de perfil" />
         </div>
       </div>
 

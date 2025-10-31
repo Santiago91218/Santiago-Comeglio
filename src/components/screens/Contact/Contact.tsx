@@ -30,9 +30,7 @@ export const Contact = () => {
 
   return (
     <div className={styles.containerContact}>
-      <h2>
-        Conta<span>cto</span>
-      </h2>
+      <h2>Contacto</h2>
 
       <div className={styles.contentForm}>
         <form onSubmit={handleSubmit} className={styles.form}>

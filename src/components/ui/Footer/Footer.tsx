@@ -7,10 +7,13 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.firstSection}>
         <div className={styles.contentInformation}>
-          <h4>Santiago Comeglio</h4>
+          <div className={styles.contentLogo}>
+            <img className={styles.logo} src="/Logo.png" alt="Logo" />
+            <h4>Santiago Comeglio</h4>
+          </div>
           <p>
-            Tecnico universitario en programacion, con stack en tecnologias como
-            Java/SpringBoot y React/Ts
+            Técnico Universitario en Programación, especializado en el
+            desarrollo de aplicaciones con Java/Spring Boot y React/TS.
           </p>
         </div>
 
@@ -56,7 +59,7 @@ export const Footer = () => {
       <div className={styles.secondSection}>
         <div className={styles.content}>
           <p>
-            © {new Date().getFullYear()} <span>Santiago Comeglio</span>
+            © {new Date().getFullYear()} <span>Santiago Comeglio</span>.
           </p>
 
           <div className={styles.contentBuild}>

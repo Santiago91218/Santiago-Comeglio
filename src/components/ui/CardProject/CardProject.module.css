@@ -11,22 +11,57 @@
 }
 
 .contentTitle h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  background: linear-gradient(
+    90deg,
+    var(--gray-200),
+    var(--gray-300),
+    var(--gray-400),
+    var(--gray-200),
+    var(--gray-300),
+    var(--gray-400)
+  );
+  -webkit-background-clip: text; /* Aplica el fondo al texto */
+  -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
+  background-clip: text; /* Compatibilidad con navegadores */
+  color: transparent; /* Asegura que el color del texto sea invisible */
+  font-weight: bold;
+  animation: float 2s ease-in-out infinite,
+    moveGradient 8s ease-in-out infinite alternate;
+  background-size: 400% 400%; /* tamaño grande para el movimiento */
   text-align: center;
 }
 
+
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
 .mainImageProject {
   cursor: pointer;
-  transition: transform 0.7s ease, rotate 0.7s ease;
+  transition: transform 0.7s ease, rotate 0.7s ease, filter 0.5s ease;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 8px solid var(--gray-500);  */
+  border-radius: 20px;
+  filter: brightness(0.6);
 }
 
 .mainImageProject:hover {
   transform: scale(1.05) rotate(1deg);
+  filter: brightness(1);
+}
+
+.mainImageProject:hover img {
+  border-radius: 20px;
 }
 
 .mainImageProject img {
@@ -34,6 +69,7 @@
   height: 70vh;
   object-fit: cover;
   border: none;
+  border-radius: 20px;
 }
 
 .contentButton {
@@ -49,7 +85,7 @@
   background-color: var(--beige-100);
   color: var(--black);
   font-weight: 600;
-  width: 6vw;
+  width: 8vw;
   font-size: 1rem;
   padding: 0.8rem 2rem;
   border: none;
@@ -69,6 +105,7 @@
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -93,7 +130,6 @@
   height: 50px;
   background: var(--blue-100);
   padding: 8px 16px;
-  border-radius: 8px;
   transition: background 0.3s ease;
 }
 
@@ -142,10 +178,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle), transparent 70%, var(--blue-600));
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    var(--blue-600)
+  );
   z-index: -1;
   padding: 5px;
-  /* border-radius: 10px; */
+  border-radius: 20px;
   animation: 4s spin linear infinite;
 }
 
