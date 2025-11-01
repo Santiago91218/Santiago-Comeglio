@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Bodega Tierra Noble - Ecommerce",
-    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Producto_eoxsr3.png",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587662/TierraNoble_Blogs_oo1dus.png",
     "mainTechnologies": [
       {
         "name": "Java",
@@ -11,6 +11,10 @@
       {
         "name": "Spring Boot",
         "icon": "/springboot.svg"
+      },
+      {
+        "name": "Spring Security",
+        "icon": "/springsecurity.svg"
       },
       {
         "name": "React",
@@ -26,7 +30,7 @@
       }
     ],
     "images": [
-      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587662/TierraNoble_Blogs_oo1dus.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Producto_eoxsr3.png",
       "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Admin_fbe9fw.png"
     ],
     "description": "Aplicación eCommerce completa para una bodega. Permite a los usuarios explorar productos, registrarse, comprar, gestionar favoritos, comparar artículos y más. Incluye un panel de administración completo con control de roles (admin y cliente) y seguridad con Spring Security. El sistema está integrado con Mercado Pago, Cloudinary y SendGrid para pagos, almacenamiento de imágenes y notificaciones por correo.",
@@ -53,56 +57,6 @@
   },
   {
     "id": 2,
-    "title": "LOOKz - Ecommerce",
-    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587643/Lookz_Productos_c5zr1d.png",
-    "mainTechnologies": [
-      {
-        "name": "Java",
-        "icon": "/java.svg"
-      },
-      {
-        "name": "Spring Boot",
-        "icon": "/springboot.svg"
-      },
-      {
-        "name": "React",
-        "icon": "/react.svg"
-      },
-      {
-        "name": "TypeScript",
-        "icon": "/typescript.svg"
-      },
-      {
-        "name": "MySQL",
-        "icon": "/mysql.svg"
-      }
-    ],
-    "images": [
-      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587643/Lookz_Carrito_qadirz.png",
-      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587644/Lookz_Admin_l8kesn.png"
-    ],
-    "description": "LOOKz es una tienda online moderna que permite a los usuarios navegar productos, registrarse, iniciar sesión y realizar compras, mientras que los administradores pueden gestionar el catálogo completo desde un panel protegido. El sistema incluye autenticación y autorización con control de roles (admin y cliente), integración con Mercado Pago y una API REST segura desarrollada con Spring Boot y MySQL.",
-    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-Ecommerse",
-    "repoBackEnd": "https://github.com/Santiago91218/Backend-Ecommerse",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Spring Boot",
-      "Spring Security",
-      "Spring Data JPA",
-      "Hibernate",
-      "MySQL",
-      "Axios",
-      "Zustand",
-      "SweetAlert2",
-      "Yup",
-      "Mercado Pago",
-      "Gradle",
-      "Lombok"
-    ]
-  },
-  {
-    "id": 3,
     "title": "ToDoList - Gestión de Tareas y Sprints",
     "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_Home_czcpas.png",
     "mainTechnologies": [
@@ -136,7 +90,8 @@
       }
     ],
     "images": [
-      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_ViewSprint_u4r0bu.png"
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_ViewSprint_u4r0bu.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761961347/ToDoList_Modal_ckza5m.png"
     ],
     "description": "Aplicación para la gestión de tareas y sprints, con un backend desarrollado en Node.js y un frontend en React. Permite crear tareas y sprints, asignarlas, cambiar sus estados y gestionar un backlog visualmente. Incluye una API REST con MongoDB y Docker para el entorno de desarrollo.",
     "repoFrontEnd": "https://github.com/Santiago91218/Frontend-ToDoList",
@@ -153,6 +108,60 @@
       "Zustand",
       "SweetAlert2",
       "Docker"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "LOOKz - Ecommerce",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761962116/Lookz_Login_zu63kx.png",
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/springboot.svg"
+      },
+      {
+        "name": "Spring Security",
+        "icon": "/springsecurity.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/typescript.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/mysql.svg"
+      }
+    ],
+    "images": [
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761962154/Lookz_Home_fsof9y.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587644/Lookz_Admin_l8kesn.png"
+    ],
+    "description": "LOOKz es una tienda online moderna que permite a los usuarios navegar productos, registrarse, iniciar sesión y realizar compras, mientras que los administradores pueden gestionar el catálogo completo desde un panel protegido. El sistema incluye autenticación y autorización con control de roles (admin y cliente), integración con Mercado Pago y una API REST segura desarrollada con Spring Boot y MySQL.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-Ecommerse",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-Ecommerse",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "Axios",
+      "Zustand",
+      "SweetAlert2",
+      "Yup",
+      "Mercado Pago",
+      "Gradle",
+      "Lombok"
     ]
   },
   {
@@ -186,11 +195,54 @@
       }
     ],
     "images": [
-      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/GestionSucursales_Admin_syudjf.png"
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/GestionSucursales_Admin_syudjf.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761960420/GestionSucursales_Modal_jhvozv.png"
     ],
     "description": "Aplicación para gestionar empresas, sucursales, productos, categorías y alérgenos. El frontend está desarrollado en React y el backend en Spring Boot, permitiendo CRUD completo sobre todas las entidades, navegación fluida, gestión global de estado con Redux y auditoría de cambios con Hibernate Envers.",
     "repoFrontEnd": "https://github.com/Santiago91218/Frontend-GestionSucursales",
     "repoBackEnd": "https://github.com/Santiago91218/Backend-GestionSucursales",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Axios",
+      "React Router DOM",
+      "SweetAlert2",
+      "Bootstrap",
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "Gradle",
+      "Lombok"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Menú Fácil",
+    "mainImage": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761964535/MenuFacil_Home_V1_ukzlxx.png",
+    "mainTechnologies": [
+      {
+        "name": "HTML",
+        "icon": "/html5.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "/css3.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/javascript.svg"
+      }
+    ],
+    "images": [
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761964534/MenuFacil_Modal_eww7ng.png",
+      "https://res.cloudinary.com/degfkwcbm/image/upload/v1761964535/MenuFacil_Home_V2_dy2cer.png"
+    ],
+    "description": "Aplicación para gestionar empresas, sucursales, productos, categorías y alérgenos. El frontend está desarrollado en React y el backend en Spring Boot, permitiendo CRUD completo sobre todas las entidades, navegación fluida, gestión global de estado con Redux y auditoría de cambios con Hibernate Envers.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-MenuFacil",
+    "repoBackEnd": "",
     "technologies": [
       "React",
       "TypeScript",

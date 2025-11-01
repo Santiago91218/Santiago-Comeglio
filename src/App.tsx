@@ -7,8 +7,29 @@ import { Contact } from "./components/screens/Contact/Contact";
 import { Technologies } from "./components/screens/Technologies/Technologies";
 import { Footer } from "./components/ui/Footer/Footer";
 import { IconChevronDown } from "./components/ui/IconChevronDown/IconChevronDown";
+import { useEffect, useState } from "react";
 
 function App() {
+   const [showArrow, setShowArrow] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const fullHeight = document.body.scrollHeight;
+
+      // Ocultar la flecha cuando se está cerca del final
+      if (scrollTop + windowHeight >= fullHeight - 50) {
+        setShowArrow(false);
+      } else {
+        setShowArrow(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <Header />
@@ -27,7 +48,7 @@ function App() {
       <section id="Contact">
         <Contact />
       </section>
-      <IconChevronDown />
+      {showArrow && <IconChevronDown />}
       <Footer />
     </>
   );

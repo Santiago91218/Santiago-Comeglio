@@ -20,15 +20,13 @@
   color: var(--gray-200);
 }
 
-/* ----- 3D Wrapper ----- */
 .wrapper {
   width: 150px;
   height: 120px;
   position: relative;
-  perspective: 1000px; 
+  perspective: 1000px;
 }
 
-/* ----- Inner rotating ring ----- */
 .inner {
   --quantity: 10;
   --translateZ: 350px;
@@ -38,6 +36,84 @@
   animation: rotate 20s linear infinite;
 }
 
+.inner.reverse {
+  animation-direction: reverse;
+}
+
+.card {
+  --index: 0;
+  --color-card: 142, 249, 252;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--color-card), 0.2);
+  box-shadow: 0 0 20px rgba(var(--color-card), 0.6);
+  padding: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+}
+
+.img {
+  width: 110px;
+  height: 110px;
+  background-color: rgba(var(--color-card), 0.2);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.wrapper:hover .inner {
+  animation-play-state: paused;
+}
+
+.techName {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  color: rgba(var(--color-card), 0.6);
+  transform: translateX(-50%);
+  display: block; 
+  max-width: 120px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover .techName {
+  opacity: 1;
+}
+
+.card:hover .img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.techSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  color: var(--gray-200);
+  margin-bottom: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--gray-400);
+  padding-bottom: 8px;
+}
+
+/*=== ANIMACIONES ===*/
 @keyframes rotate {
   from {
     transform: rotateY(0deg);
@@ -56,86 +132,4 @@
   }
 }
 
-.inner.reverse {
-  animation-direction: reverse;
-}
-
-/* ----- Individual cards ----- */
-.card {
-  --index: 0;
-  --color-card: 142, 249, 252;
-  position: absolute;
-  inset: 0;
-  background-color: rgba(var(--color-card), 0.2);
-  box-shadow: 0 0 20px rgba(var(--color-card), 0.6);
-  padding: 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
-    translateZ(var(--translateZ));
-}
-
-/* ----- Images ----- */
-.img {
-  width: 110px;
-  height: 110px;
-  background-color: rgba(var(--color-card), 0.2);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-/* ✦ Cuando se hace hover sobre el contenedor, se pausa la animación ✦ */
-.wrapper:hover .inner {
-  animation-play-state: paused;
-}
-
-/* ✦ Ocultamos el texto por defecto ✦ */
-.techName {
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
-  color: rgba(var(--color-card), 0.6);
-  transform: translateX(-50%);
-  display: block; /* usar block para controlar width */
-  max-width: 120px; /* ajusta al ancho del ícono */
-  white-space: nowrap; /* fuerza que sea una sola línea */
-  overflow: hidden; /* oculta el texto que se desborda */
-  text-overflow: ellipsis; /* agrega "..." si es demasiado largo */
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-/* ✦ Mostramos el nombre solo cuando se pasa el mouse por la card ✦ */
-.card:hover .techName {
-  opacity: 1;
-}
-
-/* ✦ Opcional: agrandar un poco el ícono cuando se hace hover ✦ */
-.card:hover .img {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/* ===== Secciones de categorías ===== */
-.techSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 60px 0;
-}
-
-.sectionTitle {
-  font-size: 24px;
-  color: var(--gray-200);
-  margin-bottom: 150px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--gray-400);
-  padding-bottom: 8px;
-}
+/*=== RESPONSIVE ===*/

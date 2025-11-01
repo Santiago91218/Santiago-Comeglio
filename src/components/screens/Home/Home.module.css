@@ -37,45 +37,24 @@
     var(--violet-300),
     var(--violet-400)
   );
-  -webkit-background-clip: text; /* Aplica el fondo al texto */
-  -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
-  background-clip: text; /* Compatibilidad con navegadores */
-  color: transparent; /* Asegura que el color del texto sea invisible */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-weight: bold;
   animation: float 2s ease-in-out infinite,
     moveGradient 8s ease-in-out infinite alternate;
-  background-size: 400% 400%; /* tamaño grande para el movimiento */
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  background-size: 400% 400%;
 }
 
 .titleLastName {
   font-size: 8rem;
   background: var(--gray-400);
-  -webkit-background-clip: text; /* Aplica el fondo al texto */
-  -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
-  background-clip: text; /* Compatibilidad con navegadores */
-  color: transparent; /* Asegura que el color del texto sea invisible */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-weight: bold;
-}
-
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
 }
 
 .subTitle {
@@ -87,21 +66,6 @@
   overflow: hidden;
   border-right: 2px solid var(--gray-400);
   animation: typing 3s steps(28) forwards, blink 0.8s infinite;
-}
-
-@keyframes typing {
-  from {
-    max-width: 0;
-  }
-  to {
-    max-width: 28ch;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
 }
 
 .contentActions {
@@ -118,7 +82,6 @@
   gap: 5vw;
 }
 
-/* --- ICONOS BASE --- */
 .iconWrapper {
   position: relative;
   display: flex;
@@ -135,12 +98,10 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover: el ícono se eleva y cambia a negro */
 .iconWrapper:hover .icon {
   color: var(--black);
 }
 
-/* Reflejo invertido */
 .reflection {
   font-size: 60px;
   color: var(--color);
@@ -158,7 +119,6 @@
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent);
 }
 
-/* --- CÍRCULO PRINCIPAL --- */
 .iconWrapper::before {
   content: "";
   position: absolute;
@@ -173,7 +133,6 @@
   z-index: 0;
 }
 
-/* --- BRILLO EXTERIOR (halo difuminado) --- */
 .iconWrapper::after {
   content: "";
   position: absolute;
@@ -189,7 +148,6 @@
   z-index: 0;
 }
 
-/* Hover: activa el círculo y el brillo exterior */
 .iconWrapper:hover::before {
   opacity: 0.9;
   transform: scale(1);
@@ -227,20 +185,19 @@
 }
 
 .iconWrapper:hover .icon {
-  color: var(--black); /* solo el icono principal cambia */
+  color: var(--black);
 }
 
 .reflection {
   font-size: 60px;
-  color: var(--color); /* siempre mismo color que el icono */
+  color: var(--color);
   opacity: 0.3;
   transform: scaleY(-1);
   filter: blur(1px);
   margin-top: 10px;
-  pointer-events: none; /* importante: no dispara hover */
+  pointer-events: none;
 }
 
-/* --- COLORES PERSONALIZADOS --- */
 .linkedin {
   --color: var(--colorLinkedin);
 }
@@ -291,3 +248,42 @@
   color: var(--gray-200);
   margin-left: 15px;
 }
+
+/*=== ANIMACIONES ===*/
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 28ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*=== RESPONSIVE ===*/

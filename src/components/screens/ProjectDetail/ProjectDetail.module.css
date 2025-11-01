@@ -1,8 +1,189 @@
-.motionDiv {
+.containerDetail {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: row; 
-  overflow-x: auto;    
-  height: 100vh;      
-  scroll-behavior: smooth;
+  flex-direction: column;
+  padding: 20px 0px 60px 0px;
 }
 
+.contentButton {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  justify-content: flex-start;
+}
+
+.button {
+  background: var(--gray-200);
+  color: var(--black);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.iconContainer {
+  background: var(--gray-700);
+  border-radius: 0.75rem;
+  color: var(--gray-200);
+  height: 2.5rem;
+  width: 25%;
+  position: absolute;
+  left: 0.25rem;
+  top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.5s ease;
+  z-index: 20;
+}
+
+.button:hover .iconContainer {
+  width: 150px;
+}
+
+.text {
+  transform: translateX(0.5rem);
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+/*=== PRIMER SECCIÓN ===*/
+.firstSection {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  gap: 60px;
+  padding: 0px 40px;
+}
+
+.contentMainImage {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  filter: brightness(0.8);
+}
+
+.contentAboutProyect {
+  flex: 1 1 45%;
+}
+
+.titleAboutProyect {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--violet-300);
+}
+
+.textAboutProyect {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--gray-200);
+}
+
+/*=== SEGUNDA SECCIÓN ===*/
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 60px;
+  padding: 0px 40px;
+}
+
+.containerTechnologiesProject {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  gap: 90px;
+}
+
+.contentSecondImage {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.contentThree {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+
+.secondImage {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  filter: brightness(0.8);
+}
+
+.thirdImage {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  filter: brightness(0.8);
+}
+
+.contentTechnologiesProject {
+  flex: 1 1 55%;
+}
+
+.titleTechProyect {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--violet-300);
+}
+
+.textTechProyect {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--gray-200);
+}
+
+.containerLinks {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.containerLinks h5 {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  color: var(--violet-300);
+}
+
+.containerLinks p {
+  font-size: 1.2rem;
+  color: var(--gray-200);
+}
+
+.containerLinks a {
+  color: var(--gray-200);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.containerLinks a:hover {
+  color: var(--gray-400);
+}
+
+/*=== RESPONSIVE ===*/

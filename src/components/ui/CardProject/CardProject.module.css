@@ -32,18 +32,6 @@
   text-align: center;
 }
 
-
-
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-
 .mainImageProject {
   cursor: pointer;
   transition: transform 0.7s ease, rotate 0.7s ease, filter 0.5s ease;
@@ -194,15 +182,6 @@
   opacity: 0.5;
 }
 
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
 .mainImageProject::before,
 .mainImageProject::after {
   opacity: 0;
@@ -214,3 +193,24 @@
 .mainImageProject:hover::after {
   opacity: 1;
 }
+
+/*=== ANIMACIONES ===*/
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*=== RESPONSIVE ===*/

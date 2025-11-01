@@ -73,6 +73,7 @@ body {
   background: var(--gray-900);
 }
 
+/*=== ANIMACIONES ===*/
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

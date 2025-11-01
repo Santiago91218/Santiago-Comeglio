@@ -2,24 +2,11 @@ import styles from "./Header.module.css";
 import { LuChevronsLeftRight } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import data from "../../../data/projects.json";
-import { useNavigate } from "react-router";
 import { ImCross } from "react-icons/im";
 
 export const Header = () => {
-  const [stateMenu, setStateMenu] = useState(false);
-  const [optionSelectedMenu, setOptionSelectedMenu] = useState("Proyectos");
-  const navigate = useNavigate();
-
-  const handleClick = (titulo: string) => {
-    const slug = titulo
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/\s+/g, "-");
-
-    navigate(`/${slug}`);
-  };
+  const [stateMenu, setStateMenu] = useState<boolean>(false);
+  const [optionSelectedMenu, setOptionSelectedMenu] = useState<string>("");
 
   const handleCloseMenu = () => {
     setStateMenu(false);
@@ -41,18 +28,9 @@ export const Header = () => {
       {stateMenu && (
         <div className={styles.contentMenuOptions}>
           <div className={styles.content}>
-            <div className={styles.contentLogo}>
-              <LuChevronsLeftRight size={360}
-              color="#f9fafb"
-              />
-            </div>
-
             <div className={styles.containerOptions}>
               <div className={styles.cancelButton}>
-                <ImCross 
-                  size={24}
-                  onClick={() => setStateMenu(false)}
-                />
+                <ImCross size={24} onClick={() => setStateMenu(false)} />
               </div>
               <ul className={styles.list}>
                 {["Proyectos", "Sobre Mi", "Tecnologías", "Contacto"].map(
@@ -68,44 +46,20 @@ export const Header = () => {
                     >
                       <a
                         href={
-                          option === "Tecnologías"
+                          option === "Proyectos"
+                            ? "#Projects"
+                            : option === "Sobre Mi"
+                            ? "#AboutMe"
+                            : option === "Tecnologías"
                             ? "#Technologies"
                             : option === "Contacto"
                             ? "#Contact"
                             : undefined
                         }
-                        onClick={() => {
-                          if (option === "Tecnologías" || option === "Contacto")
-                            handleCloseMenu();
-                        }}
+                        onClick={handleCloseMenu}
                       >
                         {option}
                       </a>
-                      {option === "Proyectos" &&
-                        optionSelectedMenu === "Proyectos" && (
-                          <ul className={styles.submenu}>
-                            {data.map((t, i) => (
-                              <li onClick={() => handleClick(t.title)} key={i}>
-                                {t.title}
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      {option === "Sobre Mi" &&
-                        optionSelectedMenu === "Sobre Mi" && (
-                          <ul className={styles.submenu}>
-                            <li>
-                              <a href="#AboutMe" onClick={handleCloseMenu}>
-                                Biografía
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#Education" onClick={handleCloseMenu}>
-                                Educación
-                              </a>
-                            </li>
-                          </ul>
-                        )}
                     </li>
                   )
                 )}

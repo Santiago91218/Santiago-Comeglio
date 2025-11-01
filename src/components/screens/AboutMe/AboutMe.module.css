@@ -10,7 +10,6 @@
   gap: 8rem;
   border-radius: 12px;
   padding: 3rem 2rem;
-  color: #f0f0ff;
   width: 80%;
   margin: 1rem auto;
 }
@@ -24,7 +23,6 @@
 .contentTitleAboutMe h3 {
   font-size: 3rem;
   font-weight: 700;
-  color: #fff;
   text-align: left;
   margin-bottom: 1rem;
   background: linear-gradient(
@@ -36,10 +34,10 @@
     var(--violet-400),
     var(--violet-500)
   );
-  -webkit-background-clip: text; /* Aplica el fondo al texto */
-  -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
-  background-clip: text; /* Compatibilidad con navegadores */
-  color: transparent; /* Asegura que el color del texto sea invisible */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
   font-weight: bold;
 }
 
@@ -107,7 +105,6 @@
   margin-top: 150px;
 }
 
-/* 🟣 Sección de Educación */
 .contentEducation {
   width: 80%;
   position: relative;
@@ -124,7 +121,6 @@
   color: var(--gray-200);
 }
 
-/* 🔹 Línea central del timeline */
 .contentCardEducation {
   position: relative;
   display: flex;
@@ -147,7 +143,6 @@
   opacity: 0.7;
 }
 
-/* 🟢 Cards intercaladas */
 .contentCardEducation > div {
   position: relative;
   width: 45%;
@@ -163,12 +158,10 @@
   align-self: flex-end;
 }
 
-/* 🔹 Línea y punto centrados debajo de cada card */
 .contentCardEducation > div {
   position: relative;
 }
 
-/* Línea debajo */
 .contentCardEducation > div::after {
   content: "";
   position: absolute;
@@ -177,10 +170,9 @@
   transform: translateX(-50%);
   width: 80%;
   height: 1.5px;
-  background: var(--violet-300); /* violeta suave */
+  background: var(--violet-300); 
 }
 
-/* Punto brillante centrado */
 .contentCardEducation > div::before {
   content: "";
   position: absolute;
@@ -198,3 +190,5 @@
   border-radius: 50%;
   box-shadow: 0 0 10px var(--violet-300);
 }
+
+/*=== RESPONSIVE ===*/
