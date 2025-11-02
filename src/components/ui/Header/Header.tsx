@@ -26,14 +26,14 @@ export const Header = () => {
       </div>
 
       {stateMenu && (
-        <div className={styles.contentMenuOptions}>
+        <nav className={styles.contentMenuOptions}>
           <div className={styles.content}>
             <div className={styles.containerOptions}>
               <div className={styles.cancelButton}>
                 <ImCross size={24} onClick={() => setStateMenu(false)} />
               </div>
               <ul className={styles.list}>
-                {["Proyectos", "Sobre Mi", "Tecnologías", "Contacto"].map(
+                {["Sobre Mi", "Proyectos", "Tecnologías", "Contacto"].map(
                   (option) => (
                     <li
                       key={option}
@@ -66,7 +66,7 @@ export const Header = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );

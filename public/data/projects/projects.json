@@ -1,0 +1,318 @@
+[
+  {
+    "id": 1,
+    "title": "Bodega Tierra Noble - Ecommerce",
+    "mainImage": {
+      "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587662/TierraNoble_Blogs_oo1dus.png",
+      "alt": "Tierra Noble Blogs"
+    },
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/icons/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/icons/springboot.svg"
+      },
+      {
+        "name": "Spring Security",
+        "icon": "/icons/springsecurity.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/icons/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/icons/typescript.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/icons/mysql.svg"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Producto_eoxsr3.png",
+        "alt": "Tierra Noble Producto"
+      },
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587661/TierraNoble_Admin_fbe9fw.png",
+        "alt": "Tierra Noble Admin"
+      }
+    ],
+    "description": "Aplicación eCommerce completa para una bodega, que permite a los usuarios explorar productos, registrarse, comprar, gestionar favoritos, comparar artículos, leer y compartir blogs, entre otras funcionalidades. Incluye un panel de administración con control de roles (admin y cliente), donde se pueden gestionar productos, categorías, artículos, descuentos y códigos de descuento, así como usuarios y pedidos. El sistema cuenta con seguridad mediante Spring Security y está integrado con Mercado Pago, Cloudinary y SendGrid para pagos, almacenamiento de imágenes y notificaciones por correo.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-TierraNoble",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-TierraNoble",
+    "technologies": {
+      "frontend": [
+        "React",
+        "TypeScript",
+        "Axios",
+        "Zustand",
+        "React Router DOM",
+        "SweetAlert2",
+        "Yup"
+      ],
+      "backend": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "Spring Data JPA",
+        "Hibernate",
+        "Gradle",
+        "Lombok"
+      ],
+      "database": ["MySQL"],
+      "tools": ["Cloudinary", "SendGrid", "Mercado Pago"]
+    }
+  },
+  {
+    "id": 2,
+    "title": "ToDoList - Gestión de Tareas y Sprints",
+    "mainImage": {
+      "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_Home_czcpas.png",
+      "alt": "ToDo-List Home"
+    },
+    "mainTechnologies": [
+      {
+        "name": "Node.js",
+        "icon": "/icons/node.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/icons/javascript.svg"
+      },
+      {
+        "name": "Express.js",
+        "icon": "/icons/express.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/icons/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/icons/typescript.svg"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "/icons/tailwindcss.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "/icons/mongodb.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "/icons/docker.svg"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/ToDoList_ViewSprint_u4r0bu.png",
+        "alt": "ToDo-List ViewSprint"
+      },
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761961347/ToDoList_Modal_ckza5m.png",
+        "alt": "ToDo-List Modal"
+      }
+    ],
+    "description": "Aplicación para la gestión de tareas y sprints, con backend en Node.js/Express y frontend en React/TypeScript. Permite crear y editar tareas y sprints, asignar tareas a un sprint, cambiar el estado de las tareas y gestionar visualmente el backlog. Incluye una API REST con MongoDB y utiliza Docker para el entorno de desarrollo, con estilos aplicados mediante el framework Tailwind CSS.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-ToDoList",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-ToDoList",
+    "technologies": {
+      "frontend": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Axios",
+        "Zustand",
+        "React Router DOM",
+        "SweetAlert2"
+      ],
+      "backend": ["Node.js", "JavaScript", "Express", "Mongoose"],
+      "database": ["MongoDB"],
+      "tools": ["Docker"]
+    }
+  },
+  {
+    "id": 3,
+    "title": "LOOKz - Ecommerce",
+    "mainImage": {
+      "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761962116/Lookz_Login_zu63kx.png",
+      "alt": "LOOKz Login"
+    },
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/icons/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/icons/springboot.svg"
+      },
+      {
+        "name": "Spring Security",
+        "icon": "/icons/springsecurity.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/icons/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/icons/typescript.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/icons/mysql.svg"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761962154/Lookz_Home_fsof9y.png",
+        "alt": "LOOKz Home"
+      },
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587644/Lookz_Admin_l8kesn.png",
+        "alt": "LOOKz Admin"
+      }
+    ],
+    "description": "LOOKz es una tienda online moderna que permite a los usuarios navegar productos, registrarse, iniciar sesión y realizar compras, mientras que los administradores pueden gestionar el catálogo completo desde un panel protegido. El sistema incluye autenticación y autorización con control de roles (admin y cliente), integración con Mercado Pago y una API REST segura desarrollada con Spring Boot y MySQL.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-Ecommerse",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-Ecommerse",
+    "technologies": {
+      "frontend": [
+        "React",
+        "TypeScript",
+        "Axios",
+        "Zustand",
+        "React Router DOM",
+        "SweetAlert2",
+        "Yup"
+      ],
+      "backend": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "Spring Data JPA",
+        "Hibernate",
+        "Gradle",
+        "Lombok"
+      ],
+      "database": ["MySQL"],
+      "tools": ["Mercado Pago"]
+    }
+  },
+  {
+    "id": 4,
+    "title": "Gestión de Sucursales",
+    "mainImage": {
+      "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587789/GestionSucursales_Home_otq2qy.png",
+      "alt": "Gestión de Sucursales Home"
+    },
+    "mainTechnologies": [
+      {
+        "name": "Java",
+        "icon": "/icons/java.svg"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "/icons/springboot.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/icons/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/icons/typescript.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "/icons/bootstrap.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/icons/mysql.svg"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761587788/GestionSucursales_Admin_syudjf.png",
+        "alt": "Gestión de Sucursales Admin"
+      },
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761960420/GestionSucursales_Modal_jhvozv.png",
+        "alt": "Gestión de Sucursales Modal"
+      }
+    ],
+    "description": "Aplicación para gestionar empresas, sucursales, productos, categorías y alérgenos mediante una API RESTful. El frontend está desarrollado en React/TypeScript y el backend en Java/Spring Boot, ofreciendo un CRUD completo sobre todas las entidades, navegación fluida y gestión global del estado mediante Redux.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-GestionSucursales",
+    "repoBackEnd": "https://github.com/Santiago91218/Backend-GestionSucursales",
+    "technologies": {
+      "frontend": [
+        "React",
+        "TypeScript",
+        "Axios",
+        "Redux",
+        "React Router DOM",
+        "SweetAlert2",
+        "Bootstrap"
+      ],
+      "backend": [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Hibernate",
+        "Gradle",
+        "Lombok"
+      ],
+      "database": ["MySQL"],
+      "tools": []
+    }
+  },
+  {
+    "id": 5,
+    "title": "Menú Fácil",
+    "mainImage": {
+      "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761964535/MenuFacil_Home_V1_ukzlxx.png",
+      "alt": "Menú Fácil Home 1"
+    },
+    "mainTechnologies": [
+      {
+        "name": "HTML",
+        "icon": "/icons/html5.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "/icons/css3.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/icons/javascript.svg"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761964534/MenuFacil_Modal_eww7ng.png",
+        "alt": "Menú Fácil Modal"
+      },
+      {
+        "url": "https://res.cloudinary.com/degfkwcbm/image/upload/v1761964535/MenuFacil_Home_V2_dy2cer.png",
+        "alt": "Menú Fácil Home 2"
+      }
+    ],
+    "description": "Menu Fácil es una aplicación web desarrollada con HTML, CSS y JavaScript para gestionar un menú de productos en categorías como hamburguesas, papas y gaseosas. Permite crear, editar, eliminar y filtrar productos, guardando la información en localStorage y utilizando SweetAlert2 para mostrar alertas interactivas.",
+    "repoFrontEnd": "https://github.com/Santiago91218/Frontend-MenuFacil",
+    "repoBackEnd": "",
+    "technologies": {
+      "frontend": ["HTML", "CSS", "JavaScript", "SweetAlert2"],
+      "backend": [],
+      "database": [],
+      "tools": []
+    }
+  }
+]

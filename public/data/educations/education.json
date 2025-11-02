@@ -5,7 +5,10 @@
     "institution": "Facultad Regional de Mendoza - UTN",
     "startDate": "2023",
     "endDate": "2025",
-    "logo": "/UTN_logo.jpg"
+    "image": {
+      "url": "/images/UtnLogo.jpg",
+      "alt": "Logo Facultad Regional de Mendoza - UTN"
+    }
   },
   {
     "id": 2,
@@ -13,6 +16,9 @@
     "institution": "Colegio San Pio X - P 43",
     "startDate": "2018",
     "endDate": "2022",
-    "logo": "/SANPIO_logo.jpg"
+    "image": {
+      "url": "/images/SanPioLogo.jpg",
+      "alt": "Logo Colegio San Pio X - P 43"
+    }
   }
 ]

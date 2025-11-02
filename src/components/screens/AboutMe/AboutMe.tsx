@@ -1,15 +1,15 @@
 import styles from "./AboutMe.module.css";
-import SantiagoComeglio from "/FotoPersonal.jpg";
+import SantiagoComeglio from "/images/FotoPersonal.jpg";
 import { CardEducation } from "../../ui/CardEducation/CardEducation";
 
 export const AboutMe = () => {
   return (
-    <div className={styles.containerMain}>
+    <section className={styles.containerMain}>
       <div className={styles.containerAboutMe}>
         <div className={styles.contentAboutMe}>
           <div className={styles.aboutMe}>
             <div className={styles.contentTitleAboutMe}>
-              <h3>Sobre Mi</h3>
+              <h2>Sobre Mi</h2>
             </div>
 
             <p className={styles.textAboutMe}>
@@ -24,14 +24,16 @@ export const AboutMe = () => {
 
           <div className={styles.experience}>
             <div className={styles.contentTitleExperience}>
-              <h4>Experiencia y Habilidades</h4>
+              <h3>Experiencia y Habilidades</h3>
             </div>
+
             <div className={styles.textAboutMe}>
               <p>
                 A lo largo de mi formación como Técnico Superior en Programación
                 y mi experiencia práctica en desarrollo web, he adquirido
                 conocimientos sólidos en varias áreas:
               </p>
+
               <ul className={styles.list}>
                 <li>
                   <b>Desarrollo Front-End y Back-End: </b>Experiencia con
@@ -40,7 +42,7 @@ export const AboutMe = () => {
                 </li>
                 <li>
                   <b>Bases de Datos y APIs:</b> Manejo de MySQL, PostgreSQL y
-                  MongoDB integración de servicios externos y optimización de
+                  MongoDB, integración de servicios externos y optimización de
                   consultas.
                 </li>
                 <li>
@@ -54,8 +56,9 @@ export const AboutMe = () => {
 
           <div className={styles.professionalGoals}>
             <div className={styles.contentTitleGoals}>
-              <h4>Objetivos Profesionales</h4>
+              <h3>Objetivos Profesionales</h3>
             </div>
+
             <p className={styles.textAboutMe}>
               Mi objetivo es seguir creciendo como desarrollador, profundizando
               en nuevas tecnologías y contribuyendo a proyectos que generen
@@ -64,12 +67,16 @@ export const AboutMe = () => {
             </p>
           </div>
         </div>
+
         <div className={styles.contentImgAboutMe}>
-          <img src={SantiagoComeglio} alt="Imagen de perfil" />
+          <img
+            src={SantiagoComeglio}
+            alt="Foto de perfil de Santiago Comeglio"
+          />
         </div>
       </div>
 
-      <div id="Education" className={styles.containerEducation}>
+      <section id="Education" className={styles.containerEducation}>
         <div className={styles.contentEducation}>
           <div className={styles.contentTitleEducation}>
             <h2>Educación</h2>
@@ -79,7 +86,7 @@ export const AboutMe = () => {
             <CardEducation />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };

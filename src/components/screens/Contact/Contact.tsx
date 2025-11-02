@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
-import type { ContactForm } from "../../../types/ContactForm";
 import { LuSendHorizontal } from "react-icons/lu";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { Alert } from "../../ui/Alert/Alert";
+import { ITypeMessage } from "../../../types/Enums/ITypeMessage"; // objeto
+import type { ITypeMessage as ITypeMessageType } from "../../../types/Enums/ITypeMessage"; // tipo
+import type { ContactForm } from "../../../types/Forms/ContactForm";
 
 export const Contact = () => {
   const intialValues: ContactForm = {
@@ -13,11 +16,25 @@ export const Contact = () => {
     message: "",
   };
   const [formValues, setFormValues] = useState<ContactForm>(intialValues);
+  const [alert, setAlert] = useState<ITypeMessageType | null>(null);
+
+  useEffect(() => {
+    if (alert) {
+      const timer = setTimeout(() => setAlert(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [alert]);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setFormValues(intialValues);
+    try {
+      setFormValues(intialValues);
+
+      setAlert(ITypeMessage.Success);
+    } catch (error) {
+      setAlert(ITypeMessage.Error);
+    }
   };
 
   const handleOnChange = (
@@ -29,17 +46,18 @@ export const Contact = () => {
   };
 
   return (
-    <div className={styles.containerContact}>
+    <section className={styles.containerContact}>
       <h2>Contacto</h2>
 
       <div className={styles.contentForm}>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
-            <label>
+            <label htmlFor="name">
               Nombre Completo <span>*</span>
             </label>
             <input
               type="text"
+              id="name"
               name="name"
               placeholder="Ej: Juan Pérez"
               value={formValues.name}
@@ -50,11 +68,12 @@ export const Contact = () => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label>
+            <label htmlFor="email">
               Email <span>*</span>
             </label>
             <input
               type="email"
+              id="email"
               name="email"
               placeholder="Ej: juan.perez@email.com"
               value={formValues.email}
@@ -65,11 +84,12 @@ export const Contact = () => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label>
+            <label htmlFor="subject">
               Asunto <span>*</span>
             </label>
             <input
               type="text"
+              id="subject"
               name="subject"
               placeholder="Ej: Solicitud de información"
               value={formValues.subject}
@@ -80,10 +100,11 @@ export const Contact = () => {
           </div>
 
           <div className={styles.textareaGroup}>
-            <label>
+            <label htmlFor="message">
               Mensaje <span>*</span>
             </label>
             <textarea
+              id="message"
               name="message"
               placeholder="Ej: ¡Excelente portfolio! Me gustaría colaborar contigo."
               value={formValues.message}
@@ -98,9 +119,8 @@ export const Contact = () => {
           </button>
         </form>
 
-        <div className={styles.contentMoreInfo}>
+        <aside className={styles.contentMoreInfo}>
           <h4>Más información</h4>
-
           <div className={styles.contentItems}>
             <div className={styles.contentIcons}>
               <FaPhoneAlt size={20} />
@@ -122,8 +142,19 @@ export const Contact = () => {
               <b>Santiago Comeglio</b>
             </p>
           </div>
-        </div>
+        </aside>
       </div>
-    </div>
+
+      {alert && (
+        <Alert
+          message={
+            alert === ITypeMessage.Success
+              ? "Éxito - Se ha enviado el mensaje"
+              : "Error - Ha ocurrido un error al enviar el mensaje"
+          }
+          type={alert}
+        />
+      )}
+    </section>
   );
 };

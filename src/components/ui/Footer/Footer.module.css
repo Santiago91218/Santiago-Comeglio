@@ -90,6 +90,12 @@
 .contentIcons {
   display: flex;
   gap: 1vw;
+  margin: 0;
+  padding: 0;
+}
+
+.contentIcons li {
+  list-style: none;
 }
 
 .contentIcons a {
@@ -138,7 +144,7 @@
 
 .iconBuildReact {
   width: 18px;
-  height: 18px;
+  height: 19px;
 }
 
 .iconBuildVite {

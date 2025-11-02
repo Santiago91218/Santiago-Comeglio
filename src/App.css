@@ -37,6 +37,12 @@
   --white: #ffff;
   --colorLinkedin: #0056b3;
   --colorGithub: #7a007a;
+  --bg-alert-success: #136432;
+  --icon-alert-success: #1fe667;
+  --text-alert-success: #bbf7d0;
+  --bg-alert-error: #912121;
+  --icon-alert-error: #ff2929;
+  --text-alert-error: #fdcfcf;
 }
 
 /*=== GENERALES ===*/

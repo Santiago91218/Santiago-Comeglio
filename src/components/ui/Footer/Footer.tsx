@@ -5,10 +5,14 @@ import { FiGithub } from "react-icons/fi";
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.firstSection}>
+      <section className={styles.firstSection}>
         <div className={styles.contentInformation}>
           <div className={styles.contentLogo}>
-            <img className={styles.logo} src="/Logo.png" alt="Logo" />
+            <img
+              className={styles.logo}
+              src="/images/Logo.png"
+              alt="Logo Web"
+            />
             <h4>Santiago Comeglio</h4>
           </div>
           <p>
@@ -17,7 +21,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className={styles.contentLinks}>
+        <nav className={styles.contentLinks} aria-label="Enlaces del sitio">
           <h4>Links</h4>
           <ul className={styles.listLinks}>
             <li>
@@ -33,30 +37,34 @@ export const Footer = () => {
               <a href="#Technologies">Tecnologías</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <div className={styles.contentNetworks}>
+        <section className={styles.contentNetworks} aria-label="Redes sociales">
           <h4>Redes</h4>
-          <div className={styles.contentIcons}>
-            <a
-              href="https://www.linkedin.com/in/santiago-comeglio-935539306/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn size={22} className={styles.icon} />
-            </a>
-            <a
-              href="https://github.com/Santiago91218"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FiGithub size={22} className={styles.icon} />
-            </a>
-          </div>
-        </div>
-      </div>
+          <ul className={styles.contentIcons}>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/santiago-comeglio-935539306/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn size={22} className={styles.icon} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Santiago91218"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiGithub size={22} className={styles.icon} />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
 
-      <div className={styles.secondSection}>
+      <section className={styles.secondSection}>
         <div className={styles.content}>
           <p>
             © {new Date().getFullYear()} <span>Santiago Comeglio</span>.
@@ -66,18 +74,17 @@ export const Footer = () => {
             <p>Construido con</p>
             <img
               className={styles.iconBuildReact}
-              src="react.svg"
-              alt="Logo react"
+              src="icons/react.svg"
+              alt="Logo React"
             />
-
             <img
               className={styles.iconBuildVite}
-              src="vitejs.svg"
-              alt="Logo vite"
+              src="icons/vitejs.svg"
+              alt="Logo Vite"
             />
           </div>
         </div>
-      </div>
+      </section>
     </footer>
   );
 };

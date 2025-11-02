@@ -1,0 +1,44 @@
+[
+  {
+    "index": 0,
+    "color": "252, 142, 142",
+    "img": "/icons/javascript.svg",
+    "name": "JavaScript"
+  },
+  {
+    "index": 1,
+    "color": "142, 252, 157",
+    "img": "/icons/typescript.svg",
+    "name": "TypeScript"
+  },
+  {
+    "index": 2,
+    "color": "142, 249, 252",
+    "img": "/icons/react.svg",
+    "name": "React"
+  },
+  {
+    "index": 3,
+    "color": "215, 252, 142",
+    "img": "/icons/html5.svg",
+    "name": "HTML"
+  },
+  {
+    "index": 4,
+    "color": "252, 252, 142",
+    "img": "/icons/css3.svg",
+    "name": "CSS"
+  },
+  {
+    "index": 5,
+    "color": "142, 252, 204",
+    "img": "/icons/bootstrap.svg",
+    "name": "Bootstrap"
+  },
+  {
+    "index": 6,
+    "color": "252, 208, 142",
+    "img": "/icons/tailwindcss.svg",
+    "name": "Tailwind CSS"
+  }
+]

@@ -1,13 +1,26 @@
 import styles from "./ProjectDetail.module.css";
 import { useNavigate, useParams } from "react-router";
-import data from "../../../data/projects.json";
 import { MdKeyboardBackspace } from "react-icons/md";
+import { useEffect, useState } from "react";
+import type { IProject } from "../../../types/Projects/IProject";
 
 export const ProjectDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const [projectsData, setProjectsData] = useState<IProject[]>([]);
 
-  const project = data.find(
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [slug]);
+
+  useEffect(() => {
+    fetch("/data/projects/projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjectsData(data))
+      .catch(console.error);
+  }, []);
+
+  const project = projectsData.find(
     (p) =>
       p.title
         .toLowerCase()
@@ -25,6 +38,7 @@ export const ProjectDetail = () => {
           className={styles.button}
           onClick={() => navigate(-1)}
           type="button"
+          aria-label="Volver al listado de proyectos"
         >
           <div className={styles.iconContainer}>
             <MdKeyboardBackspace size={30} />
@@ -35,20 +49,16 @@ export const ProjectDetail = () => {
 
       <div className={styles.firstSection}>
         <div className={styles.contentMainImage}>
-          <img className={styles.mainImage} src={project.mainImage} alt="" />
+          <img
+            className={styles.mainImage}
+            src={project.mainImage.url}
+            alt={project.mainImage.alt}
+          />
         </div>
 
         <div className={styles.contentAboutProyect}>
           <h3 className={styles.titleAboutProyect}>Sobre el proyecto</h3>
-          <p className={styles.textAboutProyect}>
-            Este proyecto consiste en un sistema para la administración integral
-            de una bodega. Permite llevar el control de los productos
-            almacenados, registrar ingresos y egresos de stock, organizar la
-            información de proveedores y clientes, y generar reportes sobre el
-            movimiento y estado de los productos. Está pensado para facilitar la
-            gestión diaria y mejorar la eficiencia operativa dentro del entorno
-            vitivinícola.
-          </p>
+          <p className={styles.textAboutProyect}>{project.description}</p>
         </div>
       </div>
 
@@ -57,33 +67,54 @@ export const ProjectDetail = () => {
           <div className={styles.contentTechnologiesProject}>
             <h3 className={styles.titleTechProyect}>Tecnologías utilizadas</h3>
 
-            <p className={styles.textTechProyect}>
-              El sistema fue desarrollado con una arquitectura web moderna. En
-              el Front-End se utilizó React para crear una interfaz dinámica e
-              intuitiva. El Back-End se construyó con Node.js y Express,
-              permitiendo crear una API REST para manejar las operaciones del
-              sistema. Para el almacenamiento de datos se implementó MongoDB,
-              ideal para manejar información flexible y estructurada. Además, se
-              utilizó Git y GitHub para el control de versiones y colaboración,
-              asegurando un flujo de trabajo organizado y eficiente.
-            </p>
+            <div className={styles.contentTextTechProyect}>
+              {project.technologies.frontend.length > 0 && (
+                <p>
+                  <b>Frontend:</b> {project.technologies.frontend.join(", ")}
+                </p>
+              )}
+
+              {project.technologies.backend.length > 0 && (
+                <p>
+                  <b>Backend:</b> {project.technologies.backend.join(", ")}
+                </p>
+              )}
+
+              {project.technologies.database.length > 0 && (
+                <p>
+                  <b>Base de Datos:</b>{" "}
+                  {project.technologies.database.join(", ")}
+                </p>
+              )}
+
+              {project.technologies.tools.length > 0 && (
+                <p>
+                  <b>Herramientas/Implementaciones:</b>{" "}
+                  {project.technologies.tools.join(", ")}
+                </p>
+              )}
+            </div>
           </div>
           <div className={styles.contentSecondImage}>
             <img
               className={styles.secondImage}
-              src={project.images[0]}
-              alt=""
+              src={project.images[0].url}
+              alt={project.images[0].alt}
             />
           </div>
         </div>
 
         <div className={styles.contentThree}>
           <div className={styles.contentThirdImage}>
-            <img className={styles.thirdImage} src={project.images[1]} alt="" />
+            <img
+              className={styles.thirdImage}
+              src={project.images[1].url}
+              alt={project.images[1].alt}
+            />
           </div>
 
           <div className={styles.containerLinks}>
-            <h5>Enlaces de interés</h5>
+            <h4>Enlaces de interés</h4>
             <p>
               <b>Repositorio Frontend: </b>
               <a

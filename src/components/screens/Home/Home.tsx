@@ -4,8 +4,8 @@ import { FaDownload, FaLinkedinIn } from "react-icons/fa";
 
 export const Home = () => {
   return (
-    <div className={styles.containerHome}>
-      <div className={styles.contentHome}>
+    <section className={styles.containerHome}>
+      <section className={styles.contentHome}>
         <div className={styles.contentTitle}>
           <div className={styles.contentNames}>
             <h1 className={styles.titleName}>Santiago</h1>
@@ -14,7 +14,7 @@ export const Home = () => {
           <h3 className={styles.subTitle}>Técnico Superior en Programación</h3>
         </div>
 
-        <div className={styles.contentActions}>
+        <section className={styles.contentActions}>
           <div className={styles.contentIcons}>
             <div className={styles.contentIcon}>
               <a
@@ -43,7 +43,7 @@ export const Home = () => {
 
           <div className={styles.contentButton}>
             <a
-              href="/CV_Santiago_Comeglio.pdf"
+              href="/cv/CV_Santiago_Comeglio.pdf"
               download
               className={styles.buttonDownload}
             >
@@ -53,8 +53,8 @@ export const Home = () => {
               </span>
             </a>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </section>
   );
 };

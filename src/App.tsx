@@ -10,7 +10,7 @@ import { IconChevronDown } from "./components/ui/IconChevronDown/IconChevronDown
 import { useEffect, useState } from "react";
 
 function App() {
-   const [showArrow, setShowArrow] = useState(true);
+  const [showArrow, setShowArrow] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,22 +33,24 @@ function App() {
   return (
     <>
       <Header />
-      <section id="Home">
-        <Home />
-      </section>
-      <section id="AboutMe">
-        <AboutMe />
-      </section>
-      <section id="Projects">
-        <Projects />
-      </section>
-      <section id="Technologies">
-        <Technologies />
-      </section>
-      <section id="Contact">
-        <Contact />
-      </section>
-      {showArrow && <IconChevronDown />}
+      <main>
+        <section id="Home">
+          <Home />
+        </section>
+        <section id="AboutMe">
+          <AboutMe />
+        </section>
+        <section id="Projects">
+          <Projects />
+        </section>
+        <section id="Technologies">
+          <Technologies />
+        </section>
+        <section id="Contact">
+          <Contact />
+        </section>
+      </main>
+      {showArrow && <IconChevronDown aria-hidden="true" />}
       <Footer />
     </>
   );

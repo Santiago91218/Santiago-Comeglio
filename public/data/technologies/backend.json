@@ -1,0 +1,32 @@
+[
+  {
+    "index": 0,
+    "color": "142, 252, 204",
+    "img": "/icons/java.svg",
+    "name": "Java"
+  },
+  {
+    "index": 1,
+    "color": "204, 142, 252",
+    "img": "/icons/node.svg",
+    "name": "Node.js"
+  },
+  {
+    "index": 2,
+    "color": "252, 142, 142",
+    "img": "/icons/springboot.svg",
+    "name": "Spring Boot"
+  },
+  {
+    "index": 3,
+    "color": "252, 208, 142",
+    "img": "/icons/springsecurity.svg",
+    "name": "Spring Security"
+  },
+  {
+    "index": 4,
+    "color": "142, 249, 252",
+    "img": "/icons/express.svg",
+    "name": "Express"
+  }
+]

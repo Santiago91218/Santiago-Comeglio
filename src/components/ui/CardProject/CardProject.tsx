@@ -1,7 +1,7 @@
-import { type FC } from "react";
-import type { ICardProjectDTO } from "../../../types/ICardProjectDTO";
+import { useState, type FC } from "react";
 import styles from "./CardProject.module.css";
 import { useNavigate } from "react-router";
+import type { ICardProjectDTO } from "../../../types/Projects/ICardProjectDTO";
 
 interface ICardProps {
   project: ICardProjectDTO;
@@ -9,8 +9,10 @@ interface ICardProps {
 
 export const CardProject: FC<ICardProps> = ({ project }) => {
   const navigate = useNavigate();
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleClick = (titulo: string) => {
+    setScrollPosition(window.scrollY);
     const slug = titulo
       .toLowerCase()
       .normalize("NFD")
@@ -21,32 +23,43 @@ export const CardProject: FC<ICardProps> = ({ project }) => {
   };
 
   return (
-    <div
-    onClick={()=>{handleClick(project.title)}}
-    className={styles.containerCard}>
+    <article
+      onClick={() => handleClick(project.title)}
+      className={styles.containerCard}
+    >
       <div className={styles.contentTitle}>
         <h3>{project.title}</h3>
       </div>
 
-      <div className={styles.mainImageProject}>
+      <figure className={styles.mainImageProject}>
         <div className={styles.techOverlay}>
-          <div className={styles.contentTech}>
+          <ul className={styles.contentTech}>
             {project.mainTechnologies.map((tech, index) => (
-              <div key={index} data-text={tech.name} className={styles.iconWrapper}>
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                />
-              </div>
+              <li
+                key={index}
+                className={styles.iconWrapper}
+                data-text={tech.name}
+              >
+                <img src={tech.icon} alt={tech.name} />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
-        <img src={project.mainImage} alt="Imagen del proyecto" />
+        <img src={project.mainImage.url} alt={project.mainImage.alt} />
+
         <div className={styles.contentButton}>
-          <button onClick={() => handleClick(project.title)}>Ver más</button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleClick(project.title);
+            }}
+          >
+            Ver más
+          </button>
         </div>
-      </div>
-    </div>
+      </figure>
+    </article>
   );
 };

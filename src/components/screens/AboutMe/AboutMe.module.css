@@ -20,7 +20,7 @@
   gap: 3vh;
 }
 
-.contentTitleAboutMe h3 {
+.contentTitleAboutMe h2 {
   font-size: 3rem;
   font-weight: 700;
   text-align: left;
@@ -48,16 +48,16 @@
   margin: 0;
 }
 
-.contentTitleExperience h4 {
+.contentTitleExperience h3 {
   font-size: 1.5rem;
 }
 
-.contentTitleGoals h4 {
+.contentTitleGoals h3 {
   font-size: 1.5rem;
 }
 
-.contentTitleExperience h4,
-.contentTitleGoals h4 {
+.contentTitleExperience h3,
+.contentTitleGoals h3 {
   color: var(--violet-200);
   margin-bottom: 1rem;
 }
@@ -143,26 +143,26 @@
   opacity: 0.7;
 }
 
-.contentCardEducation > div {
+.contentCardEducation > article {
   position: relative;
   width: 45%;
   margin: 1.5rem 0;
   transition: transform 0.3s ease;
 }
 
-.contentCardEducation > div:nth-child(odd) {
+.contentCardEducation > article:nth-child(odd) {
   align-self: flex-start;
 }
 
-.contentCardEducation > div:nth-child(even) {
+.contentCardEducation > article:nth-child(even) {
   align-self: flex-end;
 }
 
-.contentCardEducation > div {
+.contentCardEducation > article {
   position: relative;
 }
 
-.contentCardEducation > div::after {
+.contentCardEducation > article::after {
   content: "";
   position: absolute;
   bottom: -16px;
@@ -173,7 +173,7 @@
   background: var(--violet-300); 
 }
 
-.contentCardEducation > div::before {
+.contentCardEducation > article::before {
   content: "";
   position: absolute;
   bottom: -22px;
