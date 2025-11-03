@@ -287,3 +287,282 @@
 }
 
 /*=== RESPONSIVE ===*/
+@media screen and (max-width: 1024px) {
+  .contentHome {
+    width: 80%;
+  }
+
+  .titleName {
+    font-size: 6rem;
+  }
+
+  .titleLastName {
+    font-size: 7rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+
+  .iconWrapper::before {
+    top: -35%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .iconWrapper::after {
+    top: -25%;
+    width: 80px;
+    height: 80px;
+  }
+  .reflection {
+    font-size: 50px;
+  }
+
+  .buttonDownload {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .contentIcons {
+    gap: 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentHome {
+    width: 90%;
+  }
+
+  .titleName {
+    font-size: 5rem;
+  }
+
+  .titleLastName {
+    font-size: 6rem;
+  }
+
+  .subTitle {
+    font-size: 1.8rem;
+  }
+
+  .iconWrapper::before {
+    top: -35%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .iconWrapper::after {
+    top: -25%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+
+  .reflection {
+    font-size: 50px;
+  }
+
+  .contentIcons {
+    gap: 8vw;
+  }
+
+  .buttonDownload {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .titleName {
+    font-size: 4rem;
+  }
+
+  .titleLastName {
+    font-size: 5rem;
+  }
+
+  .subTitle {
+    font-size: 1.4rem;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .iconWrapper::before {
+    top: -40%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .iconWrapper::after {
+    top: -25%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .reflection {
+    font-size: 40px;
+  }
+
+  .buttonDownload {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .contentIcons {
+    gap: 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titleName {
+    font-size: 3.5rem;
+  }
+
+  .titleLastName {
+    font-size: 4rem;
+  }
+
+  .subTitle {
+    font-size: 1.4rem;
+  }
+
+  .iconWrapper::before {
+    top: -35%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconWrapper::after {
+    top: -25%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .reflection {
+    font-size: 40px;
+  }
+
+  .buttonDownload {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .contentIcons {
+    gap: 8vw;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .titleName {
+    font-size: 2.5rem;
+  }
+
+  .titleLastName {
+    font-size: 3rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+  }
+
+  .iconWrapper::before {
+    top: -35%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconWrapper::after {
+    top: -25%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .reflection {
+    font-size: 40px;
+  }
+
+  .buttonDownload {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .contentIcons {
+    gap: 10vw;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .titleName {
+    font-size: 2rem;
+  }
+
+  .titleLastName {
+    font-size: 2.5rem;
+  }
+
+  .subTitle {
+    font-size: 1.1rem;
+  }
+
+  .iconWrapper::before {
+    top: -35%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconWrapper::after {
+    top: -25%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 35px;
+  }
+
+  .reflection {
+    font-size: 35px;
+  }
+
+  .buttonDownload {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .contentIcons {
+    gap: 10vw;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .subTitle {
+    font-size: 0.9rem;
+  }
+
+  .buttonDownload {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .contentIcons {
+    gap: 12vw;
+  }
+}

@@ -8,9 +8,8 @@
   justify-content: space-around;
   align-items: center;
   gap: 8rem;
-  border-radius: 12px;
   padding: 3rem 2rem;
-  width: 80%;
+  width: 85%;
   margin: 1rem auto;
 }
 
@@ -36,7 +35,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; 
+  background-clip: text;
   color: transparent;
   font-weight: bold;
 }
@@ -44,7 +43,7 @@
 .textAboutMe {
   font-size: 1.3rem;
   line-height: 1.6;
-   color: var(--gray-100); 
+  color: var(--gray-100);
   margin: 0;
 }
 
@@ -65,6 +64,7 @@
 .textAboutMe {
   font-size: 1.1rem;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .list {
@@ -170,7 +170,7 @@
   transform: translateX(-50%);
   width: 80%;
   height: 1.5px;
-  background: var(--violet-300); 
+  background: var(--violet-300);
 }
 
 .contentCardEducation > article::before {
@@ -192,3 +192,220 @@
 }
 
 /*=== RESPONSIVE ===*/
+@media screen and (max-width: 1668px) {
+  /*=== CONTENIDO SOBRE MÍ ===*/
+  .containerAboutMe {
+    width: 90%;
+  }
+
+  .contentImgAboutMe img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .textAboutMe {
+    font-size: 1.2rem;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+
+  .contentEducation {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1498px) {
+  .contentImgAboutMe img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .textAboutMe {
+    font-size: 1rem;
+  }
+
+  .contentTitleExperience h3 {
+    font-size: 1.3rem;
+  }
+
+  .contentTitleGoals h3 {
+    font-size: 1.3rem;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+}
+
+@media screen and (max-width: 1210px) {
+  .containerAboutMe {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .textAboutMe {
+    font-size: 1rem;
+  }
+
+  .contentTitleExperience h3 {
+    font-size: 1.2rem;
+  }
+
+  .contentTitleGoals h3 {
+    font-size: 1.2rem;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+}
+
+@media screen and (max-width: 1024px) {
+  .containerAboutMe {
+    flex-direction: column;
+    gap: 3rem;
+    width: 85%;
+    padding: 2rem 1rem;
+  }
+
+  .contentImgAboutMe img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contentTitleAboutMe h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .contentTitleExperience h3,
+  .contentTitleGoals h3 {
+    text-align: center;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+
+  .containerEducation {
+    margin-top: 120px;
+  }
+
+  .contentTitleEducation {
+    margin-bottom: 90px;
+  }
+
+  .contentTitleEducation h2 {
+    font-size: 2.5rem;
+  }
+
+  .contentCardEducation {
+    align-items: flex-start; /* mueve todo el contenido hacia la izquierda */
+  }
+
+  .contentCardEducation::before {
+    left: 0%; /* mueve la línea al borde izquierdo */
+    transform: none;
+  }
+
+  .contentCardEducation > article {
+    width: 95%; /* que ocupen todo el ancho */
+    align-self: flex-start; /* uno debajo del otro, alineados a la izquierda */
+  }
+
+  .contentCardEducation > article:nth-child(odd),
+  .contentCardEducation > article:nth-child(even) {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .containerAboutMe {
+    padding: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerAboutMe {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0rem 1rem;
+  }
+
+  .contentImgAboutMe img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .contentTitleAboutMe h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contentTitleExperience h3,
+  .contentTitleGoals h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .textAboutMe {
+    font-size: 0.95rem;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+}
+
+@media screen and (max-width: 584px) {
+  .containerAboutMe {
+    gap: 2rem;
+  }
+
+  .contentImgAboutMe img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contentTitleAboutMe h2 {
+    font-size: 2rem;
+  }
+
+  .contentTitleExperience h3,
+  .contentTitleGoals h3 {
+    font-size: 1.1rem;
+  }
+
+  .textAboutMe {
+    font-size: 0.9rem;
+  }
+
+  .list {
+    padding-left: 0.8rem;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+}
+
+@media screen and (max-width: 480px) {
+  .containerAboutMe {
+    gap: 2rem;
+  }
+
+  .contentImgAboutMe img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .contentTitleAboutMe h2 {
+    font-size: 1.5rem;
+  }
+
+  .contentTitleExperience h3,
+  .contentTitleGoals h3 {
+    font-size: 1rem;
+  }
+
+  .textAboutMe {
+    font-size: 0.9rem;
+  }
+
+  .list {
+    padding-left: 0.8rem;
+  }
+
+  /*=== CONTENIDO EDUCACIÓN ===*/
+}

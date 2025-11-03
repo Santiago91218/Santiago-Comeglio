@@ -25,26 +25,6 @@ export const Contact = () => {
     }
   }, [alert]);
 
-//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-//   e.preventDefault();
-//   const form = e.target as HTMLFormElement;
-//   const formData = new FormData(form);
-
-//   try {
-//     await fetch("/", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-//       body: new URLSearchParams(formData as any).toString(),
-//     });
-
-//     setFormValues(intialValues);
-//     setAlert(ITypeMessage.Success);
-//   } catch (error) {
-//     console.error(error);
-//     setAlert(ITypeMessage.Error);
-//   }
-// };
-
   const handleOnChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -59,13 +39,12 @@ export const Contact = () => {
 
       <div className={styles.contentForm}>
         <form
-         className={styles.form}
+          className={styles.form}
           data-netlify="true"
           name="contact"
           method="POST"
         >
-
-<input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
 
           <div className={styles.inputGroup}>
             <label htmlFor="name">
