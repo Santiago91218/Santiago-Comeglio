@@ -64,7 +64,6 @@ export const Contact = () => {
           name="contacto"
           method="POST"
         >
-          <input type="hidden" name="form-name" value="contacto" />
           <div className={styles.inputGroup}>
             <label htmlFor="name">
               Nombre Completo <span>*</span>
