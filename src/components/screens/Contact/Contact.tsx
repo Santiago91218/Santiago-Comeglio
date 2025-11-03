@@ -25,15 +25,24 @@ export const Contact = () => {
     }
   }, [alert]);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    try {
-      setFormValues(intialValues);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
 
+    try {
+      
+      await fetch("/", {
+        method: "POST",
+        body: formData,
+      });
+
+      setFormValues(intialValues);
       setAlert(ITypeMessage.Success);
     } catch (error) {
       setAlert(ITypeMessage.Error);
+      setFormValues(intialValues);
     }
   };
 
@@ -50,7 +59,14 @@ export const Contact = () => {
       <h2>Contacto</h2>
 
       <div className={styles.contentForm}>
-        <form onSubmit={handleSubmit} className={styles.form}>
+        <form
+          onSubmit={handleSubmit}
+          className={styles.form}
+          data-netlify="true"
+          name="contact"
+          method="POST"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <div className={styles.inputGroup}>
             <label htmlFor="name">
               Nombre Completo <span>*</span>
