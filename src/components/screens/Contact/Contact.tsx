@@ -30,6 +30,7 @@ export const Contact = () => {
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
+    console.log(formData)
 
     try {
       
