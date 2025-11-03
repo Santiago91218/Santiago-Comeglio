@@ -17,9 +17,11 @@
 .contentForm {
   display: flex;
   justify-content: space-between;
-  width: 50%;
   box-shadow: 0 0 25px var(--gray-600);
   border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .form {
@@ -178,3 +180,116 @@
 }
 
 /*=== RESPONSIVE ===*/
+@media (max-width: 1024px) {
+  .contentForm {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerContact {
+    gap: 5vh;
+  }
+
+  .containerContact h2 {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+
+  .contentForm {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    box-shadow: none;
+  }
+
+  .form {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    box-shadow: 0 0 25px var(--gray-600);
+  }
+
+  .contentMoreInfo {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 25px var(--gray-600);
+  }
+
+  .contentIcons {
+    justify-content: center;
+  }
+
+  .contentText p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 628px) {
+  .contentForm {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerContact h2 {
+    font-size: 2.2rem;
+  }
+
+  .contentForm {
+    width: 75%;
+  }
+
+  .form {
+    gap: 3vh;
+  }
+
+  .inputGroup label,
+  .textareaGroup label {
+    font-size: 1rem;
+  }
+
+  .inputGroup input,
+  .textareaGroup textarea {
+    font-size: 1rem;
+  }
+
+  .buttonSend {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 398px) {
+  .contentForm {
+    width: 65%;
+  }
+
+  .contentMoreInfo h4 {
+    font-size: 1.2rem;
+    color: var(--gray-200);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .contentIcons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .inputGroup label,
+  .textareaGroup label {
+    font-size: 1rem;
+  }
+
+  .inputGroup input,
+  .textareaGroup textarea {
+    font-size: 1rem;
+  }
+
+  .buttonSend {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}

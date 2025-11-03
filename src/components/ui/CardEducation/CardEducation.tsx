@@ -24,7 +24,7 @@ export const CardEducation = () => {
           </figure>
 
           <section className={styles.contentData}>
-            <p>Institución: {e.institution}</p>
+            <p><span>Institución: </span>{e.institution}</p>
             <div className={styles.contentDates}>
               <p>Fecha Inicio: {e.startDate}</p>
               <p>Fecha Fin: {e.endDate}</p>

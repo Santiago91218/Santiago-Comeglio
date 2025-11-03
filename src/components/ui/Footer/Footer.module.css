@@ -153,3 +153,83 @@
 }
 
 /*=== RESPONSIVE ===*/
+@media screen and (max-width: 1380px) {
+  .firstSection,
+  .secondSection {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .firstSection,
+  .secondSection {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .contentInformation,
+  .contentLinks,
+  .contentNetworks {
+    width: 100%;
+  }
+
+  .contentLogo {
+    justify-content: center;
+  }
+
+  .listLinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contentIcons {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .secondSection {
+    width: 90%;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contentBuild {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+    gap: 4vh;
+  }
+
+  .contentInformation p,
+  .secondSection p {
+    font-size: 14px;
+  }
+
+  .listLinks li a {
+    font-size: 14px;
+  }
+
+  .iconBuildReact,
+  .iconBuildVite {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -170,4 +170,18 @@
   .contentData {
     font-size: 0.85rem;
   }
+
+  .contentData p {
+  margin: 0;
+  opacity: 0.8;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+   
+}
+
+
 }
