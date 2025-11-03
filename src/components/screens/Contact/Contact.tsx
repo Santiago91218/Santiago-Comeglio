@@ -61,9 +61,12 @@ export const Contact = () => {
         <form
          className={styles.form}
           data-netlify="true"
-          name="contacto"
+          name="contact"
           method="POST"
         >
+
+<input type="hidden" name="form-name" value="contact" />
+
           <div className={styles.inputGroup}>
             <label htmlFor="name">
               Nombre Completo <span>*</span>
