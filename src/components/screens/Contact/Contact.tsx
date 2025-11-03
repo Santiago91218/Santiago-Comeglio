@@ -59,8 +59,7 @@ export const Contact = () => {
 
       <div className={styles.contentForm}>
         <form
-          onSubmit={handleSubmit}
-          className={styles.form}
+         className={styles.form}
           data-netlify="true"
           name="contact"
           method="POST"
