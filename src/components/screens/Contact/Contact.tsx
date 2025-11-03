@@ -26,26 +26,24 @@ export const Contact = () => {
   }, [alert]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
+  const form = e.target as HTMLFormElement;
+  const formData = new FormData(form);
 
-    const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
-    console.log(formData)
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    });
 
-    try {
-      
-      await fetch("/", {
-        method: "POST",
-        body: formData,
-      });
-
-      setFormValues(intialValues);
-      setAlert(ITypeMessage.Success);
-    } catch (error) {
-      setAlert(ITypeMessage.Error);
-      setFormValues(intialValues);
-    }
-  };
+    setFormValues(intialValues);
+    setAlert(ITypeMessage.Success);
+  } catch (error) {
+    console.error(error);
+    setAlert(ITypeMessage.Error);
+  }
+};
 
   const handleOnChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
