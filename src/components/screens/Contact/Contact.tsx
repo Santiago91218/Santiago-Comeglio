@@ -25,25 +25,29 @@ export const Contact = () => {
     }
   }, [alert]);
 
-//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-//   e.preventDefault();
-//   const form = e.target as HTMLFormElement;
-//   const formData = new FormData(form);
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  
+  const formData = new FormData();
+  formData.append('name', formValues.name);
+  formData.append('email', formValues.email);
+  formData.append('subject', formValues.subject);
+  formData.append('message', formValues.message);
+  formData.append('form-name', 'contact');
 
-//   try {
-//     await fetch("/", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-//       body: new URLSearchParams(formData as any).toString(),
-//     });
+  try {
+    await fetch("/", {
+      method: "POST",
+      body: formData,
+    });
 
-//     setFormValues(intialValues);
-//     setAlert(ITypeMessage.Success);
-//   } catch (error) {
-//     console.error(error);
-//     setAlert(ITypeMessage.Error);
-//   }
-// };
+    setFormValues(intialValues);
+    setAlert(ITypeMessage.Success);
+  } catch (error) {
+    console.error("Error sending form:", error);
+    setAlert(ITypeMessage.Error);
+  }
+};
 
   const handleOnChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -60,11 +64,14 @@ export const Contact = () => {
       <div className={styles.contentForm}>
         <form
          className={styles.form}
-          data-netlify="true"
-          name="contact"
-          method="POST"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  onSubmit={handleSubmit} // ¡No olvides esto!
         >
-          <input type="hidden" name="form-name" value="contact" />
+           <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="subject" value="Contacto desde Portfolio" />
           <div className={styles.inputGroup}>
             <label htmlFor="name">
               Nombre Completo <span>*</span>
