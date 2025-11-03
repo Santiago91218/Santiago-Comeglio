@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import styles from "./Alert.module.css";
 import { HiOutlineInformationCircle } from "react-icons/hi";
-import type { ITypeMessage } from "../../../types/ITypeMessage";
+import type { ITypeMessage } from "../../../types/Enums/ITypeMessage";
 
 interface IProps {
   message: string;

@@ -33,36 +33,42 @@ export const Header = () => {
                 <ImCross size={24} onClick={() => setStateMenu(false)} />
               </div>
               <ul className={styles.list}>
-                {["Sobre Mi", "Proyectos", "Tecnologías", "Contacto"].map(
-                  (option) => (
-                    <li
-                      key={option}
-                      onClick={() => setOptionSelectedMenu(option)}
-                      className={
-                        optionSelectedMenu === option
-                          ? styles.selected
-                          : styles.option
+                {[
+                  "Home",
+                  "Sobre Mi",
+                  "Proyectos",
+                  "Tecnologías",
+                  "Contacto",
+                ].map((option) => (
+                  <li
+                    key={option}
+                    onClick={() => setOptionSelectedMenu(option)}
+                    className={
+                      optionSelectedMenu === option
+                        ? styles.selected
+                        : styles.option
+                    }
+                  >
+                    <a
+                      href={
+                        option === "Home"
+                          ? "#Home"
+                          : option === "Proyectos"
+                          ? "#Projects"
+                          : option === "Sobre Mi"
+                          ? "#AboutMe"
+                          : option === "Tecnologías"
+                          ? "#Technologies"
+                          : option === "Contacto"
+                          ? "#Contact"
+                          : undefined
                       }
+                      onClick={handleCloseMenu}
                     >
-                      <a
-                        href={
-                          option === "Proyectos"
-                            ? "#Projects"
-                            : option === "Sobre Mi"
-                            ? "#AboutMe"
-                            : option === "Tecnologías"
-                            ? "#Technologies"
-                            : option === "Contacto"
-                            ? "#Contact"
-                            : undefined
-                        }
-                        onClick={handleCloseMenu}
-                      >
-                        {option}
-                      </a>
-                    </li>
-                  )
-                )}
+                      {option}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

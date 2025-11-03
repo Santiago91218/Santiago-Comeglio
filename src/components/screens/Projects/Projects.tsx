@@ -13,6 +13,15 @@ export const Projects = () => {
       .catch((err) => console.error(err));
   }, []);
 
+  useEffect(() => {
+    if (location.hash && projects.length > 0) {
+      const element = document.querySelector(location.hash) as HTMLElement;
+      if (element) {
+        element.scrollIntoView({ behavior: "auto" });
+      }
+    }
+  }, [location, projects]);
+
   return (
     <section className={styles.containerProjects}>
       <div className={styles.contentTitle}>

@@ -30,7 +30,11 @@ export const Technologies = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  const renderGroup = (title: string, cards: IElementTech[], reverse = false) => (
+  const renderGroup = (
+    title: string,
+    cards: IElementTech[],
+    reverse = false
+  ) => (
     <div className={styles.techSection}>
       <h2 className={styles.sectionTitle}>{title}</h2>
       <div className={styles.wrapper}>

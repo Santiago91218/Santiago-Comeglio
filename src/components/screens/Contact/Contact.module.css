@@ -158,6 +158,15 @@
   color: var(--gray-300);
 }
 
+.contentIcons p a {
+  color: var(--gray-300);
+  transition: color 0.3s ease;
+}
+
+.contentIcons p a:hover {
+  color: var(--gray-400);
+}
+
 .contentIcons svg {
   color: var(--violet-400);
 }

@@ -65,7 +65,7 @@
         "Lombok"
       ],
       "database": ["MySQL"],
-      "tools": ["Cloudinary", "SendGrid", "Mercado Pago"]
+      "tools": ["Cloudinary", "Mercado Pago", "SendGrid"]
     }
   },
   {

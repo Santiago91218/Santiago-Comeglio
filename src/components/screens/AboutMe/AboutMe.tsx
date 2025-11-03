@@ -13,12 +13,12 @@ export const AboutMe = () => {
             </div>
 
             <p className={styles.textAboutMe}>
-              Soy Santiago, Técnico Superior en Programación especializado en el
-              desarrollo de soluciones Full Stack utilizando Java/Spring Boot en
-              el backend y React/TypeScript en el frontend. Tengo experiencia en
-              la integración de bases de datos relacionales (MySQL) y en la
-              creación de APIs RESTful seguras, priorizando la claridad,
-              consistencia y buenas prácticas de desarrollo.
+              Soy Santiago, Técnico Superior en Programación, especializado en
+              el desarrollo de soluciones Full Stack. Trabajo principalmente con
+              Java/Spring Boot en el backend y React/TypeScript en el frontend.
+              Tengo experiencia integrando bases de datos relacionales (MySQL) y
+              creando APIs RESTful seguras, priorizando la claridad, la
+              consistencia y las buenas prácticas de desarrollo.
             </p>
           </div>
 
@@ -29,19 +29,18 @@ export const AboutMe = () => {
 
             <div className={styles.textAboutMe}>
               <p>
-                A lo largo de mi formación como Técnico Superior en Programación
-                y mi experiencia práctica en desarrollo web, he adquirido
-                conocimientos sólidos en varias áreas:
+                Durante mi formación y experiencia práctica en desarrollo web,
+                he adquirido conocimientos sólidos en varias áreas:
               </p>
 
               <ul className={styles.list}>
                 <li>
-                  <b>Desarrollo Front-End y Back-End: </b>Experiencia con
-                  React.js, Java, Spring Boot, Node.js, HTML, CSS y JS/TS, entre
-                  otras.
+                  <b>Desarrollo Front-End y Back-End:</b> Experiencia con
+                  React.js, HTML, CSS, Java, Spring Boot, Node.js, Express.js y
+                  JavaScript/TypeScript, entre otras tecnologías.
                 </li>
                 <li>
-                  <b>Bases de Datos y APIs:</b> Manejo de MySQL, PostgreSQL y
+                  <b>Bases de datos y APIs:</b> Manejo de MySQL, PostgreSQL y
                   MongoDB, integración de servicios externos y optimización de
                   consultas.
                 </li>
@@ -60,10 +59,11 @@ export const AboutMe = () => {
             </div>
 
             <p className={styles.textAboutMe}>
-              Mi objetivo es seguir creciendo como desarrollador, profundizando
-              en nuevas tecnologías y contribuyendo a proyectos que generen
-              valor real. Busco desarrollar soluciones eficientes y escalables,
-              combinando creatividad y lógica para enfrentar desafíos complejos.
+              Mi objetivo es seguir creciendo como desarrollador, ampliando mis
+              conocimientos en nuevas tecnologías y contribuyendo a proyectos
+              que generen valor real. Busco crear soluciones eficientes y
+              escalables, combinando creatividad y lógica para enfrentar
+              desafíos complejos.
             </p>
           </div>
         </div>

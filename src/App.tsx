@@ -18,7 +18,6 @@ function App() {
       const windowHeight = window.innerHeight;
       const fullHeight = document.body.scrollHeight;
 
-      // Ocultar la flecha cuando se está cerca del final
       if (scrollTop + windowHeight >= fullHeight - 50) {
         setShowArrow(false);
       } else {

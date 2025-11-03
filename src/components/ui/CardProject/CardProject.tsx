@@ -1,4 +1,4 @@
-import { useState, type FC } from "react";
+import { type FC } from "react";
 import styles from "./CardProject.module.css";
 import { useNavigate } from "react-router";
 import type { ICardProjectDTO } from "../../../types/Projects/ICardProjectDTO";
@@ -9,10 +9,9 @@ interface ICardProps {
 
 export const CardProject: FC<ICardProps> = ({ project }) => {
   const navigate = useNavigate();
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const id = `card-${project.id}`;
 
   const handleClick = (titulo: string) => {
-    setScrollPosition(window.scrollY);
     const slug = titulo
       .toLowerCase()
       .normalize("NFD")
@@ -24,6 +23,7 @@ export const CardProject: FC<ICardProps> = ({ project }) => {
 
   return (
     <article
+      id={id}
       onClick={() => handleClick(project.title)}
       className={styles.containerCard}
     >
@@ -51,8 +51,7 @@ export const CardProject: FC<ICardProps> = ({ project }) => {
         <div className={styles.contentButton}>
           <button
             type="button"
-            onClick={(e) => {
-              e.stopPropagation();
+            onClick={() => {
               handleClick(project.title);
             }}
           >

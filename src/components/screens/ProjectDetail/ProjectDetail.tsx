@@ -9,9 +9,9 @@ export const ProjectDetail = () => {
   const navigate = useNavigate();
   const [projectsData, setProjectsData] = useState<IProject[]>([]);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [slug]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   useEffect(() => {
     fetch("/data/projects/projects.json")
@@ -31,12 +31,16 @@ export const ProjectDetail = () => {
 
   if (!project) return <p>Proyecto no encontrado</p>;
 
+  const handleBack = () => {
+    navigate(`/#card-${project.id}`);
+  };
+
   return (
     <section className={styles.containerDetail}>
       <div className={styles.contentButton}>
         <button
           className={styles.button}
-          onClick={() => navigate(-1)}
+          onClick={handleBack}
           type="button"
           aria-label="Volver al listado de proyectos"
         >
