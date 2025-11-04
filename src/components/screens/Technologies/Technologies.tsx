@@ -81,7 +81,7 @@ export const Technologies = () => {
       {renderGroup("Backend", backend, true)}
       {renderGroup("Bases de Datos", databases)}
       {renderGroup("Herramientas", tools, true)}
-      {renderGroup("Desarrollo", dev)}
+      {renderGroup("Desarrollo & Deploy", dev)}
     </section>
   );
 };

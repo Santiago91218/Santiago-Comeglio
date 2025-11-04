@@ -19,3 +19,47 @@
   flex-direction: column;
   gap: 10vh;
 }
+
+@media screen and (max-width: 1024px) {
+  .containerProjects {
+    margin-top: 150px;
+  }
+
+  .contentTitle h2 {
+    font-size: 3rem;
+  }
+
+  .contentCard {
+    gap: 8vh;
+  }
+}
+
+/* Móviles grandes */
+@media screen and (max-width: 768px) {
+  .containerProjects {
+    margin-top: 100px;
+  }
+
+  .contentTitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .contentCard {
+    gap: 6vh;
+  }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+  .containerProjects {
+    margin-top: 80px;
+  }
+
+  .contentTitle h2 {
+    font-size: 2rem;
+  }
+
+  .contentCard {
+    gap: 4vh;
+  }
+}

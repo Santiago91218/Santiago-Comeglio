@@ -94,6 +94,7 @@
   line-height: 1.6;
   font-size: 1.2rem;
   color: var(--gray-200);
+  text-align: justify;
 }
 
 /*=== SEGUNDA SECCIÓN ===*/
@@ -164,6 +165,7 @@
   line-height: 1.6;
   font-size: 1.2rem;
   color: var(--gray-200);
+  text-align: justify;
 }
 
 .containerLinks {
@@ -195,3 +197,271 @@
 }
 
 /*=== RESPONSIVE ===*/
+
+@media screen and (max-width: 1462px) {
+  .secondImage {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .textAboutProyect {
+    font-size: 1.1rem;
+  }
+  .containerTechnologiesProject p {
+    font-size: 1.1rem;
+  }
+
+  .containerLinks p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1248px) {
+  .titleAboutProyect {
+    font-size: 2.2rem;
+  }
+  .titleTechProyect {
+    font-size: 2.2rem;
+  }
+  .containerLinks h4 {
+    font-size: 2.2rem;
+  }
+  .thirdImage {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1198px) {
+  .firstSection {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .contentAboutProyect {
+    flex: unset;
+    width: 85%;
+  }
+
+  .contentMainImage {
+    flex: unset;
+    width: 85%;
+  }
+
+  .mainImage {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .titleAboutProyect {
+    font-size: 2rem;
+  }
+
+  .textAboutProyect {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .containerTechnologiesProject {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+  }
+
+  .containerTechnologiesProject p {
+    text-align: justify;
+  }
+
+  .contentTechnologiesProject {
+    width: 90%;
+    text-align: center;
+  }
+
+  .titleTechProyect {
+    font-size: 2rem;
+  }
+
+  .secondSection {
+    gap: 0px;
+  }
+
+  .contentSecondImage {
+    width: 90%;
+  }
+
+  .contentThree {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .thirdImage {
+    width: 100%;
+  }
+
+  .containerLinks h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .containerLinks p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .contentButton {
+    margin-left: 20px;
+  }
+
+  .button {
+    width: 8rem;
+    height: 2.6rem;
+    font-size: 1rem;
+  }
+
+  .iconContainer {
+    height: 2.2rem;
+  }
+}
+
+/* 📱 Móviles grandes (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .firstSection {
+    padding: 0px 20px;
+    gap: 30px;
+  }
+
+  .titleAboutProyect {
+    font-size: 1.8rem;
+  }
+
+  .textAboutProyect {
+    font-size: 1rem;
+  }
+
+  .titleTechProyect {
+    font-size: 1.8rem;
+  }
+
+  .contentTextTechProyect p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .containerLinks h4 {
+    font-size: 1.8rem;
+  }
+
+  .containerLinks p {
+    font-size: 1rem;
+  }
+
+  .mainImage,
+  .secondImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contentButton {
+    margin-left: 10px;
+  }
+
+  .button {
+    width: 7rem;
+    height: 2.4rem;
+    font-size: 0.9rem;
+  }
+
+  .iconContainer {
+    height: 1.93rem;
+    width: 28%;
+  }
+
+  .button:hover .iconContainer {
+    width: 105px;
+  }
+}
+
+/* 📱 Móviles pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+  .containerDetail {
+    padding: 10px 0 40px 0;
+  }
+
+  .contentButton {
+    margin-left: 20px;
+  }
+
+  .button {
+    width: 6.5rem;
+    height: 2.3rem;
+    font-size: 0.9rem;
+  }
+
+  .iconContainer {
+    height: 1.9rem;
+    width: 28%;
+  }
+
+  .button:hover .iconContainer {
+    width: 95px;
+  }
+
+  .firstSection,
+  .secondSection,
+  .contentThree {
+    padding: 0 15px;
+    gap: 25px;
+  }
+
+  .titleAboutProyect,
+  .titleTechProyect,
+  .containerLinks h4 {
+    font-size: 1.5rem;
+  }
+
+  .textAboutProyect,
+  .contentTextTechProyect p,
+  .containerLinks p {
+    font-size: 0.9rem;
+  }
+
+  .mainImage,
+  .secondImage {
+    border-radius: 12px;
+    filter: brightness(0.9);
+  }
+
+  .thirdImage {
+    width: 93%;
+  }
+
+  .containerLinks {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .containerLinks a {
+    word-break: break-word;
+  }
+}
+
+/* 🪶 Pantallas mínimas (hasta 320px) */
+@media screen and (max-width: 320px) {
+  .titleAboutProyect,
+  .titleTechProyect,
+  .containerLinks h4 {
+    font-size: 1.3rem;
+  }
+
+  .textAboutProyect,
+  .contentTextTechProyect p,
+  .containerLinks p {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+}
