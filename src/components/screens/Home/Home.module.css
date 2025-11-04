@@ -441,15 +441,15 @@
 
 @media screen and (max-width: 430px) {
   .titleName {
-    font-size: 2.5rem;
-  }
-
-  .titleLastName {
     font-size: 3rem;
   }
 
+  .titleLastName {
+    font-size: 4rem;
+  }
+
   .subTitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .icon {
@@ -472,11 +472,11 @@
 
 @media screen and (max-width: 374px) {
   .titleName {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .titleLastName {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .subTitle {

@@ -7,6 +7,7 @@ export const Technologies = () => {
   const [backend, setBackend] = useState<IElementTech[]>([]);
   const [databases, setDatabases] = useState<IElementTech[]>([]);
   const [tools, setTools] = useState<IElementTech[]>([]);
+  const [dev, setDev] = useState<IElementTech[]>([]);
 
   useEffect(() => {
     fetch("/data/technologies/frontend.json")
@@ -27,6 +28,11 @@ export const Technologies = () => {
     fetch("/data/technologies/tools.json")
       .then((res) => res.json())
       .then((data) => setTools(data))
+      .catch((err) => console.error(err));
+
+    fetch("/data/technologies/dev.json")
+      .then((res) => res.json())
+      .then((data) => setDev(data))
       .catch((err) => console.error(err));
   }, []);
 
@@ -75,6 +81,7 @@ export const Technologies = () => {
       {renderGroup("Backend", backend, true)}
       {renderGroup("Bases de Datos", databases)}
       {renderGroup("Herramientas", tools, true)}
+      {renderGroup("Desarrollo", dev)}
     </section>
   );
 };

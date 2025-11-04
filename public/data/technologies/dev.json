@@ -1,0 +1,32 @@
+[
+  {
+    "index": 0,
+    "color": "252, 208, 142",
+    "img": "/icons/vitejs.svg",
+    "name": "Vite"
+  },
+  {
+    "index": 1,
+    "color": "142, 252, 157",
+    "img": "/icons/vscode.svg",
+    "name": "VSCode"
+  },
+  {
+    "index": 2,
+    "color": "252, 142, 239",
+    "img": "/icons/intellij.svg",
+    "name": "IntelliJ IDEA"
+  },
+  {
+    "index": 3,
+    "color": "142, 202, 252",
+    "img": "/icons/netlify.svg",
+    "name": "Netlify"
+  },
+  {
+    "index": 4,
+    "color": "142, 252, 208",
+    "img": "/icons/render.svg",
+    "name": "Render"
+  }
+]
