@@ -21,23 +21,9 @@
 
 .contentTitleAboutMe h2 {
   font-size: 3rem;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 1rem;
-  background: linear-gradient(
-    90deg,
-    var(--violet-300),
-    var(--violet-400),
-    var(--violet-500),
-    var(--violet-300),
-    var(--violet-400),
-    var(--violet-500)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  color: var(--violet-300);
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .textAboutMe {
@@ -127,6 +113,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 2vh;
   padding: 20px;
 }
 
@@ -281,7 +268,6 @@
   }
 
   /*=== CONTENIDO EDUCACIÓN ===*/
-
   .containerEducation {
     margin-top: 120px;
   }
@@ -291,26 +277,48 @@
   }
 
   .contentTitleEducation h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .contentCardEducation {
-    align-items: flex-start; /* mueve todo el contenido hacia la izquierda */
+    align-items: flex-start; 
   }
 
   .contentCardEducation::before {
-    left: 0%; /* mueve la línea al borde izquierdo */
+    left: 0%; 
     transform: none;
   }
 
   .contentCardEducation > article {
-    width: 95%; /* que ocupen todo el ancho */
-    align-self: flex-start; /* uno debajo del otro, alineados a la izquierda */
+    width: 95%; 
+    align-self: flex-start; 
   }
 
   .contentCardEducation > article:nth-child(odd),
   .contentCardEducation > article:nth-child(even) {
     align-self: flex-start;
+  }
+
+  .contentCardEducation > article::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-190%, -50%);
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(
+      circle,
+      var(--violet-300) 0%,
+      var(--violet-400) 70%,
+      transparent 100%
+    );
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--violet-300);
+  }
+
+  .contentCardEducation > article::after {
+    display: none;
   }
 }
 
@@ -348,20 +356,19 @@
   }
 
   /*=== CONTENIDO EDUCACIÓN ===*/
+  .contentTitleEducation h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 584px) {
   .containerAboutMe {
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .contentImgAboutMe img {
     width: 200px;
     height: 200px;
-  }
-
-  .contentTitleAboutMe h2 {
-    font-size: 2rem;
   }
 
   .contentTitleExperience h3,
@@ -382,7 +389,7 @@
 
 @media screen and (max-width: 480px) {
   .containerAboutMe {
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .contentImgAboutMe img {
@@ -408,4 +415,11 @@
   }
 
   /*=== CONTENIDO EDUCACIÓN ===*/
+  .containerEducation {
+    margin-top: 60px;
+  }
+
+  .contentTitleEducation h2 {
+    font-size: 2rem;
+  }
 }

@@ -308,17 +308,26 @@
     font-size: 50px;
   }
 
+  .linkedin:hover .icon {
+    color: var(--colorLinkedin-hover);
+  }
+
+  .github:hover .icon {
+    color: var(--colorGithub-hover);
+  }
+
   .iconWrapper::before {
-    top: -35%;
-    width: 80px;
-    height: 80px;
+    top: 0%;
+    width: 0px;
+    height: 0px;
   }
 
   .iconWrapper::after {
-    top: -25%;
-    width: 80px;
-    height: 80px;
+    top: 0%;
+    width: 0px;
+    height: 0px;
   }
+
   .reflection {
     font-size: 50px;
   }
@@ -348,18 +357,6 @@
 
   .subTitle {
     font-size: 1.8rem;
-  }
-
-  .iconWrapper::before {
-    top: -35%;
-    width: 80px;
-    height: 80px;
-  }
-
-  .iconWrapper::after {
-    top: -25%;
-    width: 80px;
-    height: 80px;
   }
 
   .icon {
@@ -397,18 +394,6 @@
     font-size: 40px;
   }
 
-  .iconWrapper::before {
-    top: -40%;
-    width: 70px;
-    height: 70px;
-  }
-
-  .iconWrapper::after {
-    top: -25%;
-    width: 70px;
-    height: 70px;
-  }
-
   .reflection {
     font-size: 40px;
   }
@@ -434,18 +419,6 @@
 
   .subTitle {
     font-size: 1.4rem;
-  }
-
-  .iconWrapper::before {
-    top: -35%;
-    width: 60px;
-    height: 60px;
-  }
-
-  .iconWrapper::after {
-    top: -25%;
-    width: 60px;
-    height: 60px;
   }
 
   .icon {
@@ -479,18 +452,6 @@
     font-size: 1.2rem;
   }
 
-  .iconWrapper::before {
-    top: -35%;
-    width: 60px;
-    height: 60px;
-  }
-
-  .iconWrapper::after {
-    top: -25%;
-    width: 60px;
-    height: 60px;
-  }
-
   .icon {
     font-size: 40px;
   }
@@ -520,18 +481,6 @@
 
   .subTitle {
     font-size: 1.1rem;
-  }
-
-  .iconWrapper::before {
-    top: -35%;
-    width: 60px;
-    height: 60px;
-  }
-
-  .iconWrapper::after {
-    top: -25%;
-    width: 60px;
-    height: 60px;
   }
 
   .icon {
