@@ -61,7 +61,7 @@
   gap: 0.3rem;
 }
 
-/*=== RESPPONSIVE ===*/
+/*=== RESPONSIVE ===*/
 @media screen and (max-width: 1668px) {
   .containerCard {
     width: 400px;
@@ -172,16 +172,13 @@
   }
 
   .contentData p {
-  margin: 0;
-  opacity: 0.8;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-   
-}
-
-
+    margin: 0;
+    opacity: 0.8;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+  }
 }

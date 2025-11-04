@@ -76,11 +76,11 @@
   left: 50%;
   color: rgba(var(--color-card), 0.6);
   transform: translateX(-50%);
-  display: block; 
-  max-width: 120px; 
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  display: block;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 14px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -133,17 +133,6 @@
 }
 
 /*=== RESPONSIVE ===*/
-/* 1️⃣ Pantallas grandes */
-@media screen and (max-width: 1600px) {
-  
-}
-
-/* 2️⃣ Laptops medianas */
-@media screen and (max-width: 1280px) {
-  
-}
-
-/* 3️⃣ Tablets */
 @media screen and (max-width: 1024px) {
   .containerTechnologies {
     gap: 6vh;
@@ -175,7 +164,6 @@
   }
 }
 
-/* 4️⃣ Celulares grandes */
 @media screen and (max-width: 768px) {
   .containerTechnologies {
     gap: 4vh;
@@ -183,7 +171,7 @@
     margin-top: 40px;
   }
 
-    .contentTittle h2 {
+  .contentTittle h2 {
     font-size: 2.5rem;
   }
 
@@ -211,8 +199,8 @@
   }
 }
 
-@media screen and (max-width: 600px){
-   .contentTittle h2 {
+@media screen and (max-width: 600px) {
+  .contentTittle h2 {
     font-size: 1.8rem;
   }
 
@@ -226,15 +214,12 @@
     height: 55px;
   }
 
-  
   .inner {
     --translateZ: 210px;
     transform-style: preserve-3d;
   }
-
 }
 
-/* 5️⃣ Celulares chicos */
 @media screen and (max-width: 480px) {
   .contentTittle h2 {
     font-size: 1.8rem;
@@ -272,16 +257,14 @@
   }
 }
 
-@media screen and (max-width:410px){
-.inner {
+@media screen and (max-width: 410px) {
+  .inner {
     --translateZ: 150px;
   }
 }
 
-
-@media screen and (max-width:348px){
-.inner {
+@media screen and (max-width: 348px) {
+  .inner {
     --translateZ: 130px;
-
   }
 }

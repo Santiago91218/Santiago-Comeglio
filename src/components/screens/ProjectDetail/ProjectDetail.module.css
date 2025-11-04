@@ -197,7 +197,6 @@
 }
 
 /*=== RESPONSIVE ===*/
-
 @media screen and (max-width: 1462px) {
   .secondImage {
     margin-top: 50px;
@@ -324,7 +323,6 @@
   }
 }
 
-/* 📱 Móviles grandes (hasta 768px) */
 @media screen and (max-width: 768px) {
   .firstSection {
     padding: 0px 20px;
@@ -382,7 +380,6 @@
   }
 }
 
-/* 📱 Móviles pequeños (hasta 480px) */
 @media screen and (max-width: 480px) {
   .containerDetail {
     padding: 10px 0 40px 0;
@@ -408,8 +405,7 @@
   }
 
   .firstSection,
-  .secondSection,
-  .contentThree {
+  .secondSection {
     padding: 0 15px;
     gap: 25px;
   }
@@ -434,6 +430,7 @@
 
   .thirdImage {
     width: 93%;
+    margin-left: 10px;
   }
 
   .containerLinks {
@@ -446,7 +443,6 @@
   }
 }
 
-/* 🪶 Pantallas mínimas (hasta 320px) */
 @media screen and (max-width: 320px) {
   .titleAboutProyect,
   .titleTechProyect,

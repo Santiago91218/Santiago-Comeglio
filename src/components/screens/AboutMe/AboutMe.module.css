@@ -195,7 +195,6 @@
   }
 
   /*=== CONTENIDO EDUCACIÓN ===*/
-
   .contentEducation {
     width: 90%;
   }
@@ -218,8 +217,6 @@
   .contentTitleGoals h3 {
     font-size: 1.3rem;
   }
-
-  /*=== CONTENIDO EDUCACIÓN ===*/
 }
 
 @media screen and (max-width: 1210px) {
@@ -240,8 +237,6 @@
   .contentTitleGoals h3 {
     font-size: 1.2rem;
   }
-
-  /*=== CONTENIDO EDUCACIÓN ===*/
 }
 
 @media screen and (max-width: 1024px) {
@@ -281,17 +276,17 @@
   }
 
   .contentCardEducation {
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   .contentCardEducation::before {
-    left: 0%; 
+    left: 0%;
     transform: none;
   }
 
   .contentCardEducation > article {
-    width: 95%; 
-    align-self: flex-start; 
+    width: 95%;
+    align-self: flex-start;
   }
 
   .contentCardEducation > article:nth-child(odd),
@@ -383,8 +378,6 @@
   .list {
     padding-left: 0.8rem;
   }
-
-  /*=== CONTENIDO EDUCACIÓN ===*/
 }
 
 @media screen and (max-width: 480px) {

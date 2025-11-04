@@ -8,6 +8,7 @@
     colorShift 5s linear infinite alternate;
 }
 
+/*=== ANIMACIONES ===*/
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -35,5 +36,24 @@
   }
   100% {
     color: var(--pink-200);
+  }
+}
+
+/*=== RESPONSIVE ===*/
+@media screen and (max-width: 900px) {
+  .icon {
+    left: 49%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    left: 48%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .icon {
+    left: 47%;
   }
 }

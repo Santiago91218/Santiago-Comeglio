@@ -21,14 +21,14 @@
     var(--gray-300),
     var(--gray-400)
   );
-  -webkit-background-clip: text; /* Aplica el fondo al texto */
-  -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
-  background-clip: text; /* Compatibilidad con navegadores */
-  color: transparent; /* Asegura que el color del texto sea invisible */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-weight: bold;
   animation: float 2s ease-in-out infinite,
     moveGradient 8s ease-in-out infinite alternate;
-  background-size: 400% 400%; /* tamaño grande para el movimiento */
+  background-size: 400% 400%;
   text-align: center;
 }
 
@@ -273,7 +273,6 @@
   }
 }
 
-/* Móviles grandes */
 @media screen and (max-width: 768px) {
   .containerCard {
     max-width: 85vw;
@@ -299,7 +298,6 @@
   }
 }
 
-/* Móviles grandes */
 @media screen and (max-width: 702px) {
   .contentTitle h3 {
     font-size: 1.7rem;
@@ -325,17 +323,21 @@
     font-size: 0.85rem;
   }
 
+  .contentTech {
+    display: none;
+  }
+
   .contentTech img {
     width: 30px;
     height: 30px;
   }
 }
 
-/* Móviles pequeños */
 @media screen and (max-width: 488px) {
   .containerCard {
     max-width: 90vw;
     gap: 2vh;
+    padding: 15px;
   }
 
   .contentTitle h3 {
@@ -352,10 +354,6 @@
     font-size: 0.8rem;
   }
 
-  .contentTech {
-    gap: 0px;
-  }
-
   .contentTech img {
     width: 28px;
     height: 28px;
@@ -368,7 +366,7 @@
 
 @media screen and (max-width: 415px) {
   .containerCard {
-    max-width: 90vw;
+    max-width: 88vw;
     gap: 2vh;
   }
 
@@ -378,11 +376,6 @@
 
   .mainImageProject img {
     height: 25vh;
-  }
-
-  .contentTech img {
-    width: 26px;
-    height: 26px;
   }
 
   .contentButton button {
@@ -408,11 +401,6 @@
 
   .mainImageProject img {
     height: 23vh;
-  }
-
-  .contentTech img {
-    width: 20px;
-    height: 20px;
   }
 
   .contentButton button {

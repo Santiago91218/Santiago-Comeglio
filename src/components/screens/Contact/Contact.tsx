@@ -3,8 +3,8 @@ import styles from "./Contact.module.css";
 import { LuSendHorizontal } from "react-icons/lu";
 import { IoIosMail } from "react-icons/io";
 import { Alert } from "../../ui/Alert/Alert";
-import { ITypeMessage } from "../../../types/Enums/ITypeMessage"; // objeto
-import type { ITypeMessage as ITypeMessageType } from "../../../types/Enums/ITypeMessage"; // tipo
+import { ITypeMessage } from "../../../types/Enums/ITypeMessage";
+import type { ITypeMessage as ITypeMessageType } from "../../../types/Enums/ITypeMessage";
 import type { ContactForm } from "../../../types/Forms/ContactForm";
 import { SiWhatsapp } from "react-icons/si";
 

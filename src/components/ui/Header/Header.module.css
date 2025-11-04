@@ -193,35 +193,11 @@
 
 @media screen and (max-width: 768px) {
   .contentMenuOptions {
-    left: 40%;
+    left: 0%;
   }
 
   .containerOptions {
-    width: 60vw;
-  }
-
-  .list {
-    gap: 2vh;
-    margin-top: 15px;
-  }
-
-  .option,
-  .selected {
-    font-size: 1.5rem;
-  }
-
-  .cancelButton svg {
-    margin: 15px 20px 15px 0px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contentMenuOptions {
-    left: 40%;
-  }
-
-  .containerOptions {
-    width: 60vw;
+    width: 100vw;
   }
 
   .list {
@@ -251,18 +227,11 @@
   .cancelButton svg {
     width: 25px;
     height: 25px;
+    margin: 15px 20px 15px 0px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .contentMenuOptions {
-    left: 20%;
-  }
-
-  .containerOptions {
-    width: 80vw;
-  }
-
   .option,
   .selected {
     font-size: 1.3rem;
