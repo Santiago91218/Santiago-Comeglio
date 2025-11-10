@@ -43,7 +43,7 @@ export const Home = () => {
 
           <div className={styles.contentButton}>
             <a
-              href="/cv/CV_Santiago_Comeglio.pdf"
+              href="/cv/Santiago_Comeglio_CV.pdf"
               download
               className={styles.buttonDownload}
             >
