@@ -1,5 +1,5 @@
 import styles from "./AboutMe.module.css";
-import SantiagoComeglio from "/images/FotoPersonal.jpg";
+import SantiagoComeglio from "/images/logos/FotoPersonal.jpg";
 import { CardEducation } from "../../ui/CardEducation/CardEducation";
 
 export const AboutMe = () => {

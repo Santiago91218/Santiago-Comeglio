@@ -6,7 +6,7 @@
     "startDate": "2023",
     "endDate": "2025",
     "image": {
-      "url": "/images/UtnLogo.jpg",
+      "url": "/images/logos/UtnLogo.jpg",
       "alt": "Logo Facultad Regional de Mendoza - UTN"
     }
   },
@@ -17,7 +17,7 @@
     "startDate": "2018",
     "endDate": "2022",
     "image": {
-      "url": "/images/SanPioLogo.jpg",
+      "url": "/images/logos/SanPioLogo.jpg",
       "alt": "Logo Colegio San Pio X - P 43"
     }
   }
