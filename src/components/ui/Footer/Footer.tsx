@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className={styles.contentLogo}>
             <img
               className={styles.logo}
-              src="/images/Logo.png"
+              src="/images/logos/Logo.png"
               alt="Logo Web"
             />
             <h4>Santiago Comeglio</h4>
