@@ -13,12 +13,17 @@ export const AboutMe = () => {
             </div>
 
             <p className={styles.textAboutMe}>
-              Soy Santiago, Técnico Superior en Programación, especializado en
-              el desarrollo de soluciones Full Stack. Trabajo principalmente con
-              Java/Spring Boot en el backend y React/TypeScript en el frontend.
-              Tengo experiencia integrando bases de datos relacionales (MySQL) y
-              creando APIs RESTful seguras, priorizando la claridad, la
-              consistencia y las buenas prácticas de desarrollo.
+              Soy Santiago, Técnico Superior en Programación y desarrollador con
+              experiencia en la construcción de aplicaciones web y de
+              escritorio. Trabajo principalmente con Java y Spring Boot en el
+              backend, y React con TypeScript en el frontend, desarrollando
+              soluciones escalables, seguras y orientadas a buenas prácticas.
+              Tengo experiencia en el diseño de APIs REST, integración de bases
+              de datos relacionales, autenticación y autorización, así como en
+              la implementación de interfaces modernas y funcionales. Me enfoco
+              en escribir código claro y mantenible, y en mejorar de forma
+              continua mediante el aprendizaje de nuevas tecnologías y
+              herramientas.
             </p>
           </div>
 
@@ -29,8 +34,9 @@ export const AboutMe = () => {
 
             <div className={styles.textAboutMe}>
               <p>
-                Durante mi formación y experiencia práctica en desarrollo web,
-                he adquirido conocimientos sólidos en varias áreas:
+                A lo largo de mi formación y experiencia, he participado en el
+                desarrollo de diversos proyectos, fortaleciendo mis
+                conocimientos en distintas áreas del desarrollo de software:
               </p>
 
               <ul className={styles.list}>
@@ -59,11 +65,11 @@ export const AboutMe = () => {
             </div>
 
             <p className={styles.textAboutMe}>
-              Mi objetivo es seguir creciendo como desarrollador, ampliando mis
-              conocimientos en nuevas tecnologías y contribuyendo a proyectos
-              que generen valor real. Busco crear soluciones eficientes y
-              escalables, combinando creatividad y lógica para enfrentar
-              desafíos complejos.
+              Mi objetivo es continuar creciendo como desarrollador,
+              profundizando mi especialización y aportando valor en proyectos
+              que requieran soluciones robustas y bien diseñadas, aplicando mis
+              conocimientos para contribuir al desarrollo de productos de
+              calidad.
             </p>
           </div>
         </div>
